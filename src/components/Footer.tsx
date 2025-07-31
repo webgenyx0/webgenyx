@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Music, PaintBucket } from "lucide-react";
+import { Facebook, Instagram, Twitter, Hash, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -16,17 +16,17 @@ const Footer = () => {
     {
       name: "TikTok",
       url: "https://www.tiktok.com/@webgenyx",
-      icon: <Music className="h-5 w-5" />
+      icon: <span className="text-xs font-bold">TT</span>
     },
     {
       name: "X (Twitter)",
       url: "https://x.com/WGenyx",
-      icon: <Twitter className="h-5 w-5" />
+      icon: <Hash className="h-5 w-5" />
     },
     {
       name: "Pinterest",
       url: "https://www.pinterest.com/webgenyx0/",
-      icon: <PaintBucket className="h-5 w-5" />
+      icon: <Palette className="h-5 w-5" />
     }
   ];
 
@@ -44,10 +44,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">WG</span>
-              </div>
-              <span className="text-xl font-bold hero-text">WebGenyx</span>
+              <img 
+                src="/lovable-uploads/c82e3ca3-1621-43d7-804f-3a4ae14125b4.png" 
+                alt="WebGenyx Logo" 
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Building the future of the web, one pixel at a time. Creating exceptional digital experiences that drive results and inspire innovation.

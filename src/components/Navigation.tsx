@@ -43,9 +43,13 @@ const Navigation = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="text-2xl font-bold hero-text hover:scale-105 transition-transform duration-300"
+            className="flex items-center gap-2 hover:scale-105 transition-transform duration-300"
           >
-            WebGenyx
+            <img 
+              src="/lovable-uploads/c82e3ca3-1621-43d7-804f-3a4ae14125b4.png" 
+              alt="WebGenyx Logo" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
