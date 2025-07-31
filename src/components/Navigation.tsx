@@ -48,7 +48,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/c82e3ca3-1621-43d7-804f-3a4ae14125b4.png" 
               alt="WebGenyx Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 

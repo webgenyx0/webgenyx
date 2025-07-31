@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Hash, Palette } from "lucide-react";
+import { Facebook, Instagram, Twitter, Video, Palette } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -16,12 +16,12 @@ const Footer = () => {
     {
       name: "TikTok",
       url: "https://www.tiktok.com/@webgenyx",
-      icon: <span className="text-xs font-bold">TT</span>
+      icon: <Video className="h-5 w-5" />
     },
     {
       name: "X (Twitter)",
       url: "https://x.com/WGenyx",
-      icon: <Hash className="h-5 w-5" />
+      icon: <Twitter className="h-5 w-5" />
     },
     {
       name: "Pinterest",
