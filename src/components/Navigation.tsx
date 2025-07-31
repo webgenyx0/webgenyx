@@ -50,6 +50,7 @@ const Navigation = () => {
               alt="WebGenyx Logo" 
               className="h-12 w-auto"
             />
+            <span className="text-xl font-bold text-foreground">WebGenyx</span>
           </Link>
 
           {/* Desktop Navigation */}

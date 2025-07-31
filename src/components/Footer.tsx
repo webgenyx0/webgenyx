@@ -49,6 +49,7 @@ const Footer = () => {
                 alt="WebGenyx Logo" 
                 className="h-10 w-auto"
               />
+              <span className="text-xl font-bold text-foreground">WebGenyx</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
               Building the future of the web, one pixel at a time. Creating exceptional digital experiences that drive results and inspire innovation.
