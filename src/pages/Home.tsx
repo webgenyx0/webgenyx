@@ -122,8 +122,106 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Stats Section */}
+      <section className="py-20 px-4 bg-background/50">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 text-center">
+            {[
+              { number: "50+", label: "Projects Completed" },
+              { number: "25+", label: "Happy Clients" },
+              { number: "3+", label: "Years Experience" },
+              { number: "100%", label: "Client Satisfaction" }
+            ].map((stat, index) => (
+              <Card key={index} className="glass-card p-6 hover-glow animate-fade-in-up" style={{animationDelay: `${index * 100}ms`}}>
+                <h3 className="text-3xl md:text-4xl font-bold hero-text mb-2">{stat.number}</h3>
+                <p className="text-muted-foreground">{stat.label}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in-up">
+              Technologies I{" "}
+              <span className="hero-text">Master</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '200ms'}}>
+              I leverage cutting-edge technologies to build scalable, performant, and beautiful web solutions.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-4xl mx-auto">
+            {[
+              "React", "TypeScript", "Next.js", "Tailwind CSS", "Node.js", "PostgreSQL"
+            ].map((tech, index) => (
+              <Card 
+                key={index}
+                className="glass-card p-6 text-center hover-glow cursor-pointer animate-fade-in-up"
+                style={{animationDelay: `${(index + 1) * 100}ms`}}
+              >
+                <div className="w-12 h-12 bg-gradient-primary rounded-lg mx-auto mb-3 flex items-center justify-center">
+                  <span className="text-primary-foreground font-bold text-sm">{tech.slice(0, 2)}</span>
+                </div>
+                <h3 className="font-semibold text-sm">{tech}</h3>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
       <section className="py-20 px-4 webgenyx-gradient-surface">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-fade-in-up">
+              What Clients{" "}
+              <span className="hero-text">Say</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '200ms'}}>
+              Don't just take my word for it. Here's what my clients have to say about working with WebGenyx.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {[
+              {
+                name: "Sarah Johnson",
+                role: "CEO, TechStart",
+                content: "Boluwatife delivered an exceptional website that exceeded our expectations. The attention to detail and modern design perfectly captured our brand."
+              },
+              {
+                name: "Michael Chen",
+                role: "Founder, InnovateCo",
+                content: "Working with WebGenyx was a game-changer for our business. The website is not only beautiful but also drives real results."
+              },
+              {
+                name: "Emily Rodriguez",
+                role: "Marketing Director",
+                content: "Professional, creative, and incredibly skilled. Boluwatife transformed our online presence and boosted our conversion rates significantly."
+              }
+            ].map((testimonial, index) => (
+              <Card 
+                key={index}
+                className="glass-card p-6 hover-glow animate-fade-in-up"
+                style={{animationDelay: `${(index + 1) * 200}ms`}}
+              >
+                <p className="text-muted-foreground mb-4 italic">"{testimonial.content}"</p>
+                <div className="border-t border-border/20 pt-4">
+                  <h4 className="font-semibold">{testimonial.name}</h4>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-4">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in-up">
             Ready to Start Your Project?
