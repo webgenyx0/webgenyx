@@ -96,7 +96,7 @@ const About = () => {
                 <div className="w-80 h-80 mx-auto rounded-full bg-gradient-primary p-1">
                   <div className="w-full h-full rounded-full bg-background p-2">
                     <img 
-                      src={profilePhoto} 
+                      src="/lovable-uploads/d7f7be86-4090-4413-a1fe-e6d9990f6a6a.png" 
                       alt="Boluwatife Omobuwajo - Web Developer" 
                       className="w-full h-full rounded-full object-cover"
                     />
