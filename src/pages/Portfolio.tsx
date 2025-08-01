@@ -4,6 +4,14 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+// Import project images
+import ecommercePlatform from "@/assets/ecommerce-platform.jpg";
+import saasDashboard from "@/assets/saas-dashboard.jpg";
+import restaurantWebsite from "@/assets/restaurant-website.jpg";
+import portfolioWebsite from "@/assets/portfolio-website.jpg";
+import taskManagementApp from "@/assets/task-management-app.jpg";
+import corporateWebsite from "@/assets/corporate-website.jpg";
+
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
   const [activeFilter, setActiveFilter] = useState("All");
@@ -17,7 +25,7 @@ const Portfolio = () => {
       id: 1,
       title: "E-Commerce Platform",
       description: "A modern e-commerce solution with advanced filtering, payment integration, and admin dashboard.",
-      image: "/placeholder-project-1.jpg",
+      image: ecommercePlatform,
       category: "Web Development",
       technologies: ["React", "Next.js", "Stripe", "PostgreSQL"],
       liveUrl: "#",
@@ -28,7 +36,7 @@ const Portfolio = () => {
       id: 2,
       title: "SaaS Dashboard",
       description: "A comprehensive dashboard for SaaS analytics with real-time data visualization and reporting.",
-      image: "/placeholder-project-2.jpg",
+      image: saasDashboard,
       category: "Web Development",
       technologies: ["React", "TypeScript", "D3.js", "Node.js"],
       liveUrl: "#",
@@ -39,7 +47,7 @@ const Portfolio = () => {
       id: 3,
       title: "Restaurant Website",
       description: "A beautiful restaurant website with online ordering system and table reservation functionality.",
-      image: "/placeholder-project-3.jpg",
+      image: restaurantWebsite,
       category: "Web Design",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       liveUrl: "#",
@@ -50,7 +58,7 @@ const Portfolio = () => {
       id: 4,
       title: "Portfolio Website",
       description: "A creative portfolio website for a digital artist with interactive galleries and animations.",
-      image: "/placeholder-project-4.jpg",
+      image: portfolioWebsite,
       category: "Web Design",
       technologies: ["Next.js", "GSAP", "CSS3"],
       liveUrl: "#",
@@ -61,7 +69,7 @@ const Portfolio = () => {
       id: 5,
       title: "Task Management App",
       description: "A collaborative task management application with real-time updates and team features.",
-      image: "/placeholder-project-5.jpg",
+      image: taskManagementApp,
       category: "Web Development",
       technologies: ["React", "Firebase", "Material-UI"],
       liveUrl: "#",
@@ -72,7 +80,7 @@ const Portfolio = () => {
       id: 6,
       title: "Corporate Website",
       description: "A professional corporate website with content management system and SEO optimization.",
-      image: "/placeholder-project-6.jpg",
+      image: corporateWebsite,
       category: "Web Design",
       technologies: ["Next.js", "Sanity CMS", "Tailwind CSS"],
       liveUrl: "#",
@@ -122,11 +130,13 @@ const Portfolio = () => {
                 className="glass-card overflow-hidden hover-glow group cursor-pointer animate-scale-in"
                 style={{animationDelay: `${index * 200}ms`}}
               >
-                <div className="relative h-64 bg-gradient-surface overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-primary opacity-10 group-hover:opacity-20 transition-opacity duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-4xl font-bold text-primary/50">Project Image</div>
-                  </div>
                   <div className="absolute top-4 right-4">
                     <Badge variant="secondary" className="bg-primary text-primary-foreground">
                       Featured
@@ -207,11 +217,13 @@ const Portfolio = () => {
                 className="glass-card overflow-hidden hover-glow group cursor-pointer animate-fade-in-up"
                 style={{animationDelay: `${index * 100}ms`}}
               >
-                <div className="relative h-48 bg-gradient-surface overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                   <div className="absolute inset-0 bg-gradient-primary opacity-10 group-hover:opacity-20 transition-opacity duration-300" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-2xl font-bold text-primary/50">Project Image</div>
-                  </div>
                   {project.featured && (
                     <div className="absolute top-3 right-3">
                       <Badge variant="secondary" className="bg-primary text-primary-foreground text-xs">
