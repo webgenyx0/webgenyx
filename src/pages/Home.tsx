@@ -10,6 +10,13 @@ const Home = () => {
 
   useEffect(() => {
     setLoaded(true);
+    
+    // Auto refresh after 1 second
+    const timer = setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   const features = [
