@@ -4,26 +4,37 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-// Import project images
-import ecommercePlatform from "@/assets/ecommerce-platform.jpg";
-import saasDashboard from "@/assets/saas-dashboard.jpg";
-import restaurantWebsite from "@/assets/restaurant-website.jpg";
-import portfolioWebsite from "@/assets/portfolio-website.jpg";
-import taskManagementApp from "@/assets/task-management-app.jpg";
-import corporateWebsite from "@/assets/corporate-website.jpg";
-import digitalArtwork from "@/assets/digital-artwork.jpg";
-import cyberpunkCity from "@/assets/cyberpunk-city.jpg";
-import liquidMetal from "@/assets/liquid-metal.jpg";
-import neuralNetwork from "@/assets/neural-network.jpg";
-import cosmicPortal from "@/assets/cosmic-portal.jpg";
-import dataVisualization from "@/assets/data-visualization.jpg";
-import crystalFormation from "@/assets/crystal-formation.jpg";
-import vrLandscape from "@/assets/vr-landscape.jpg";
-import quantumComputing from "@/assets/quantum-computing.jpg";
-import digitalPhoenix from "@/assets/digital-phoenix.jpg";
-import creativeAgencyWebsite from "@/assets/creative-agency-website.jpg";
-import aiCodeAssistant from "@/assets/ai-code-assistant.jpg";
-import blockchainExplorer from "@/assets/blockchain-explorer-new.jpg";
+// Import digital marketing themed images
+import dmEcosystem from "@/assets/dm-ecosystem.jpg";
+import dmAiAutomation from "@/assets/dm-ai-automation.jpg";
+import dmSocialUniverse from "@/assets/dm-social-universe.jpg";
+import dmLab from "@/assets/dm-lab.jpg";
+import dmContentGarden from "@/assets/dm-content-garden.jpg";
+import dmEmailOrchestra from "@/assets/dm-email-orchestra.jpg";
+import dmInfluencerCity from "@/assets/dm-influencer-city.jpg";
+import dmDataCrystal from "@/assets/dm-data-crystal.jpg";
+import dmBrandTheater from "@/assets/dm-brand-theater.jpg";
+import dmAutomationFactory from "@/assets/dm-automation-factory.jpg";
+import dmTimeMachine from "@/assets/dm-time-machine.jpg";
+import dmCustomerMaze from "@/assets/dm-customer-maze.jpg";
+import dmPsychologyLab from "@/assets/dm-psychology-lab.jpg";
+import dmGrowthRocket from "@/assets/dm-growth-rocket.jpg";
+import dmPersonalizationWorkshop from "@/assets/dm-personalization-workshop.jpg";
+import dmAttributionDetective from "@/assets/dm-attribution-detective.jpg";
+import dmViralVolcano from "@/assets/dm-viral-volcano.jpg";
+import dmMartechTower from "@/assets/dm-martech-tower.jpg";
+import dmOmnichannelWeb from "@/assets/dm-omnichannel-web.jpg";
+import dmRoiTreasure from "@/assets/dm-roi-treasure.jpg";
+import dmSentimentWeather from "@/assets/dm-sentiment-weather.jpg";
+import dmCroLaboratory from "@/assets/dm-cro-laboratory.jpg";
+import dmAttributionCosmos from "@/assets/dm-attribution-cosmos.jpg";
+import dmChessStrategy from "@/assets/dm-chess-strategy.jpg";
+import dmAutomationSymphony from "@/assets/dm-automation-symphony.jpg";
+import dmClvHourglass from "@/assets/dm-clv-hourglass.jpg";
+import dmMixologyBar from "@/assets/dm-mixology-bar.jpg";
+import dmDnaEvolution from "@/assets/dm-dna-evolution.jpg";
+import dmPredictionOracle from "@/assets/dm-prediction-oracle.jpg";
+import dmEngagementArcade from "@/assets/dm-engagement-arcade.jpg";
 
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
@@ -38,7 +49,7 @@ const Portfolio = () => {
       id: 1,
       title: "E-Commerce Platform",
       description: "A modern e-commerce solution with advanced filtering, payment integration, and admin dashboard.",
-      image: ecommercePlatform,
+      image: dmEcosystem,
       category: "Web Development",
       technologies: ["React", "Next.js", "Stripe", "PostgreSQL"],
       liveUrl: "#",
@@ -49,7 +60,7 @@ const Portfolio = () => {
       id: 2,
       title: "SaaS Dashboard",
       description: "A comprehensive dashboard for SaaS analytics with real-time data visualization and reporting.",
-      image: saasDashboard,
+      image: dmAiAutomation,
       category: "Web Development",
       technologies: ["React", "TypeScript", "D3.js", "Node.js"],
       liveUrl: "#",
@@ -60,7 +71,7 @@ const Portfolio = () => {
       id: 3,
       title: "Restaurant Website",
       description: "A beautiful restaurant website with online ordering system and table reservation functionality.",
-      image: restaurantWebsite,
+      image: dmSocialUniverse,
       category: "Web Design",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       liveUrl: "#",
@@ -71,7 +82,7 @@ const Portfolio = () => {
       id: 4,
       title: "Portfolio Website",
       description: "A creative portfolio website for a digital artist with interactive galleries and animations.",
-      image: portfolioWebsite,
+      image: dmLab,
       category: "Web Design",
       technologies: ["Next.js", "GSAP", "CSS3"],
       liveUrl: "#",
@@ -82,7 +93,7 @@ const Portfolio = () => {
       id: 5,
       title: "Task Management App",
       description: "A collaborative task management application with real-time updates and team features.",
-      image: taskManagementApp,
+      image: dmContentGarden,
       category: "Web Development",
       technologies: ["React", "Firebase", "Material-UI"],
       liveUrl: "#",
@@ -93,7 +104,7 @@ const Portfolio = () => {
       id: 6,
       title: "Corporate Website",
       description: "A professional corporate website with content management system and SEO optimization.",
-      image: corporateWebsite,
+      image: dmEmailOrchestra,
       category: "Web Design",
       technologies: ["Next.js", "Sanity CMS", "Tailwind CSS"],
       liveUrl: "#",
@@ -104,7 +115,7 @@ const Portfolio = () => {
       id: 7,
       title: "AI Code Assistant",
       description: "An intelligent code assistant that helps developers write better code with AI-powered suggestions.",
-      image: aiCodeAssistant,
+      image: dmInfluencerCity,
       category: "Web Development",
       technologies: ["React", "OpenAI API", "Monaco Editor", "Python"],
       liveUrl: "#",
@@ -115,7 +126,7 @@ const Portfolio = () => {
       id: 8,
       title: "Mobile Banking App",
       description: "A secure mobile banking application with biometric authentication and real-time transactions.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
+      image: dmDataCrystal,
       category: "Mobile App",
       technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
       liveUrl: "#",
@@ -126,7 +137,7 @@ const Portfolio = () => {
       id: 9,
       title: "IoT Dashboard",
       description: "A comprehensive dashboard for managing IoT devices with real-time monitoring and controls.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop",
+      image: dmBrandTheater,
       category: "Web Development",
       technologies: ["Vue.js", "Socket.io", "MQTT", "InfluxDB"],
       liveUrl: "#",
@@ -137,7 +148,7 @@ const Portfolio = () => {
       id: 10,
       title: "Fitness Tracking App",
       description: "A comprehensive fitness app with workout tracking, nutrition monitoring, and social features.",
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop",
+      image: dmAutomationFactory,
       category: "Mobile App",
       technologies: ["Flutter", "Firebase", "Health APIs", "ML Kit"],
       liveUrl: "#",
@@ -148,7 +159,7 @@ const Portfolio = () => {
       id: 11,
       title: "Creative Agency Website",
       description: "A stunning website for a creative agency featuring portfolio showcases and smooth animations.",
-      image: creativeAgencyWebsite,
+      image: dmTimeMachine,
       category: "Web Design",
       technologies: ["Gatsby", "Three.js", "GSAP", "Contentful"],
       liveUrl: "#",
@@ -159,7 +170,7 @@ const Portfolio = () => {
       id: 12,
       title: "Blockchain Explorer",
       description: "A modern blockchain explorer with advanced analytics and transaction visualization.",
-      image: blockchainExplorer,
+      image: dmCustomerMaze,
       category: "Web Development",
       technologies: ["React", "Web3.js", "GraphQL", "Redis"],
       liveUrl: "#",
@@ -170,7 +181,7 @@ const Portfolio = () => {
       id: 13,
       title: "Learning Management System",
       description: "A comprehensive LMS with course creation, student progress tracking, and interactive content.",
-      image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=600&fit=crop",
+      image: dmPsychologyLab,
       category: "Web Development",
       technologies: ["Next.js", "Prisma", "PostgreSQL", "AWS S3"],
       liveUrl: "#",
@@ -181,7 +192,7 @@ const Portfolio = () => {
       id: 14,
       title: "Social Media Dashboard",
       description: "A unified dashboard for managing multiple social media accounts with analytics and scheduling.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop",
+      image: dmGrowthRocket,
       category: "Web Development",
       technologies: ["React", "Express.js", "Redis", "Social APIs"],
       liveUrl: "#",
@@ -192,7 +203,7 @@ const Portfolio = () => {
       id: 15,
       title: "Event Management App",
       description: "A mobile app for event planning with guest management, scheduling, and real-time updates.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop",
+      image: dmPersonalizationWorkshop,
       category: "Mobile App",
       technologies: ["React Native", "Firebase", "Push Notifications", "Maps API"],
       liveUrl: "#",
@@ -203,7 +214,7 @@ const Portfolio = () => {
       id: 16,
       title: "UI Design System",
       description: "A comprehensive design system with reusable components and design tokens for consistent branding.",
-      image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?w=800&h=600&fit=crop",
+      image: dmAttributionDetective,
       category: "UI/UX Design",
       technologies: ["Figma", "Storybook", "Design Tokens", "Accessibility"],
       liveUrl: "#",
@@ -214,7 +225,7 @@ const Portfolio = () => {
       id: 17,
       title: "Real Estate Platform",
       description: "A modern real estate platform with property listings, virtual tours, and mortgage calculators.",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=600&fit=crop",
+      image: dmViralVolcano,
       category: "Web Development",
       technologies: ["React", "MapBox", "Strapi", "Payment APIs"],
       liveUrl: "#",
@@ -225,7 +236,7 @@ const Portfolio = () => {
       id: 18,
       title: "Smart Home Controller",
       description: "A mobile app for controlling smart home devices with voice commands and automation features.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      image: dmMartechTower,
       category: "Mobile App",
       technologies: ["React Native", "IoT APIs", "Voice Recognition", "BLE"],
       liveUrl: "#",
@@ -236,7 +247,7 @@ const Portfolio = () => {
       id: 19,
       title: "Medical Records System",
       description: "A secure medical records management system with patient portals and appointment scheduling.",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=800&h=600&fit=crop",
+      image: dmOmnichannelWeb,
       category: "Web Development",
       technologies: ["React", "FHIR", "HIPAA Compliance", "PostgreSQL"],
       liveUrl: "#",
@@ -247,7 +258,7 @@ const Portfolio = () => {
       id: 20,
       title: "Travel Planning App",
       description: "A comprehensive travel app with itinerary planning, booking integration, and offline maps.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
+      image: dmRoiTreasure,
       category: "Mobile App",
       technologies: ["Flutter", "Google Maps", "Booking APIs", "Offline Storage"],
       liveUrl: "#",
@@ -256,110 +267,110 @@ const Portfolio = () => {
     },
     {
       id: 21,
-      title: "Digital Artwork Collection",
-      description: "An AI-generated digital artwork featuring abstract geometric shapes and vibrant neon colors with futuristic elements.",
-      image: digitalArtwork,
+      title: "Digital Marketing Campaign",
+      description: "A comprehensive digital marketing campaign with sentiment analysis and mood tracking features.",
+      image: dmSentimentWeather,
       category: "UI/UX Design",
-      technologies: ["AI Art", "Digital Design", "Abstract Art", "Neon Colors"],
+      technologies: ["Sentiment Analysis", "Mood Tracking", "Data Viz", "Marketing"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
       id: 22,
-      title: "Cyberpunk Cityscape",
-      description: "A futuristic cyberpunk cityscape with neon lights, holographic displays, and towering skyscrapers.",
-      image: cyberpunkCity,
+      title: "Conversion Rate Optimization Tool",
+      description: "Advanced CRO laboratory with A/B testing capabilities and user behavior analysis.",
+      image: dmCroLaboratory,
       category: "UI/UX Design",
-      technologies: ["Digital Art", "Cyberpunk", "Neon Design", "Futuristic"],
+      technologies: ["A/B Testing", "User Analysis", "CRO", "Optimization"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 23,
-      title: "Liquid Metal Sculpture",
-      description: "Abstract liquid metal splash with chrome reflections and dynamic flowing mercury-like substance.",
-      image: liquidMetal,
+      title: "Attribution Modeling Platform",
+      description: "Cosmic attribution modeling system with advanced customer journey tracking.",
+      image: dmAttributionCosmos,
       category: "UI/UX Design",
-      technologies: ["3D Art", "Metallic Design", "Abstract", "Chrome Effects"],
+      technologies: ["Attribution", "Customer Journey", "Analytics", "Tracking"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 24,
-      title: "Neural Network Visualization",
-      description: "Digital brain neural network with glowing synapses and AI consciousness visualization.",
-      image: neuralNetwork,
+      title: "Marketing Strategy Dashboard",
+      description: "Strategic marketing warfare platform with competitive analysis and tactical planning.",
+      image: dmChessStrategy,
       category: "UI/UX Design",
-      technologies: ["AI Visualization", "Neural Networks", "Digital Brain", "Tech Art"],
+      technologies: ["Strategy", "Competitive Analysis", "Planning", "Tactics"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 25,
-      title: "Cosmic Portal Gateway",
-      description: "A cosmic space portal with swirling galaxies, stellar formations, and nebulae in vibrant colors.",
-      image: cosmicPortal,
+      title: "Marketing Automation Symphony",
+      description: "Orchestrated marketing automation with synchronized multi-channel campaigns.",
+      image: dmAutomationSymphony,
       category: "UI/UX Design",
-      technologies: ["Space Art", "Cosmic Design", "Galaxy Effects", "Portal Design"],
+      technologies: ["Automation", "Multi-channel", "Orchestration", "Campaigns"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 26,
-      title: "Holographic Data Interface",
-      description: "Futuristic data visualization with floating charts, graphs, and holographic UI elements.",
-      image: dataVisualization,
+      title: "Customer Lifetime Value Calculator",
+      description: "Temporal CLV visualization with loyalty tracking and retention analysis.",
+      image: dmClvHourglass,
       category: "UI/UX Design",
-      technologies: ["Data Viz", "Holographic UI", "Futuristic Design", "Interface Design"],
+      technologies: ["CLV", "Loyalty", "Retention", "Analytics"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 27,
-      title: "Digital Crystal Formation",
-      description: "Magical crystal formation with prismatic light refractions and rainbow spectrum colors.",
-      image: crystalFormation,
+      title: "Marketing Mix Optimization",
+      description: "Marketing mixology platform for optimizing promotional ingredient combinations.",
+      image: dmMixologyBar,
       category: "UI/UX Design",
-      technologies: ["Crystal Art", "Prismatic Effects", "Magic Design", "Rainbow Colors"],
+      technologies: ["Marketing Mix", "Optimization", "Campaigns", "Testing"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 28,
-      title: "Virtual Reality Landscape",
-      description: "Retro 80s VR landscape with digital terrain, pixelated mountains, and synthwave aesthetics.",
-      image: vrLandscape,
+      title: "Market Evolution Tracker",
+      description: "DNA-based marketing evolution system with genetic customer segmentation.",
+      image: dmDnaEvolution,
       category: "UI/UX Design",
-      technologies: ["VR Design", "Synthwave", "Retro 80s", "Digital Terrain"],
+      technologies: ["Evolution", "Segmentation", "DNA Analysis", "Market Research"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 29,
-      title: "Quantum Computing Visualization",
-      description: "Scientific visualization of quantum computing with particle physics and molecular structures.",
-      image: quantumComputing,
+      title: "Marketing Prediction Oracle",
+      description: "Mystical marketing forecasting system with trend prediction and outcome analysis.",
+      image: dmPredictionOracle,
       category: "UI/UX Design",
-      technologies: ["Quantum Viz", "Scientific Art", "Particle Physics", "Molecular Design"],
+      technologies: ["Prediction", "Forecasting", "Trends", "Oracle"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
       id: 30,
-      title: "Digital Phoenix Rising",
-      description: "A digital phoenix rising from binary code with fire effects made of data streams.",
-      image: digitalPhoenix,
+      title: "Customer Engagement Arcade",
+      description: "Gamified customer engagement platform with loyalty points and achievement systems.",
+      image: dmEngagementArcade,
       category: "UI/UX Design",
-      technologies: ["Phoenix Art", "Binary Code", "Data Streams", "Fire Effects"],
+      technologies: ["Gamification", "Engagement", "Loyalty", "Achievements"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
