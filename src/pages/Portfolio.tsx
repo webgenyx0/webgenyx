@@ -23,6 +23,7 @@ import quantumComputing from "@/assets/quantum-computing.jpg";
 import digitalPhoenix from "@/assets/digital-phoenix.jpg";
 import creativeAgencyWebsite from "@/assets/creative-agency-website.jpg";
 import aiCodeAssistant from "@/assets/ai-code-assistant.jpg";
+import blockchainExplorer from "@/assets/blockchain-explorer-new.jpg";
 
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
@@ -158,7 +159,7 @@ const Portfolio = () => {
       id: 12,
       title: "Blockchain Explorer",
       description: "A modern blockchain explorer with advanced analytics and transaction visualization.",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
+      image: blockchainExplorer,
       category: "Web Development",
       technologies: ["React", "Web3.js", "GraphQL", "Redis"],
       liveUrl: "#",
