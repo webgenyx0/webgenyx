@@ -22,6 +22,7 @@ import vrLandscape from "@/assets/vr-landscape.jpg";
 import quantumComputing from "@/assets/quantum-computing.jpg";
 import digitalPhoenix from "@/assets/digital-phoenix.jpg";
 import creativeAgencyWebsite from "@/assets/creative-agency-website.jpg";
+import aiCodeAssistant from "@/assets/ai-code-assistant.jpg";
 
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
@@ -102,7 +103,7 @@ const Portfolio = () => {
       id: 7,
       title: "AI Code Assistant",
       description: "An intelligent code assistant that helps developers write better code with AI-powered suggestions.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      image: aiCodeAssistant,
       category: "Web Development",
       technologies: ["React", "OpenAI API", "Monaco Editor", "Python"],
       liveUrl: "#",
