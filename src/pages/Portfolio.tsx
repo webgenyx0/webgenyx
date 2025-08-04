@@ -21,6 +21,7 @@ import crystalFormation from "@/assets/crystal-formation.jpg";
 import vrLandscape from "@/assets/vr-landscape.jpg";
 import quantumComputing from "@/assets/quantum-computing.jpg";
 import digitalPhoenix from "@/assets/digital-phoenix.jpg";
+import creativeAgencyWebsite from "@/assets/creative-agency-website.jpg";
 
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
@@ -145,7 +146,7 @@ const Portfolio = () => {
       id: 11,
       title: "Creative Agency Website",
       description: "A stunning website for a creative agency featuring portfolio showcases and smooth animations.",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop",
+      image: creativeAgencyWebsite,
       category: "Web Design",
       technologies: ["Gatsby", "Three.js", "GSAP", "Contentful"],
       liveUrl: "#",
