@@ -12,6 +12,15 @@ import portfolioWebsite from "@/assets/portfolio-website.jpg";
 import taskManagementApp from "@/assets/task-management-app.jpg";
 import corporateWebsite from "@/assets/corporate-website.jpg";
 import digitalArtwork from "@/assets/digital-artwork.jpg";
+import cyberpunkCity from "@/assets/cyberpunk-city.jpg";
+import liquidMetal from "@/assets/liquid-metal.jpg";
+import neuralNetwork from "@/assets/neural-network.jpg";
+import cosmicPortal from "@/assets/cosmic-portal.jpg";
+import dataVisualization from "@/assets/data-visualization.jpg";
+import crystalFormation from "@/assets/crystal-formation.jpg";
+import vrLandscape from "@/assets/vr-landscape.jpg";
+import quantumComputing from "@/assets/quantum-computing.jpg";
+import digitalPhoenix from "@/assets/digital-phoenix.jpg";
 
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
@@ -252,6 +261,105 @@ const Portfolio = () => {
       liveUrl: "#",
       githubUrl: "#",
       featured: true
+    },
+    {
+      id: 22,
+      title: "Cyberpunk Cityscape",
+      description: "A futuristic cyberpunk cityscape with neon lights, holographic displays, and towering skyscrapers.",
+      image: cyberpunkCity,
+      category: "UI/UX Design",
+      technologies: ["Digital Art", "Cyberpunk", "Neon Design", "Futuristic"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 23,
+      title: "Liquid Metal Sculpture",
+      description: "Abstract liquid metal splash with chrome reflections and dynamic flowing mercury-like substance.",
+      image: liquidMetal,
+      category: "UI/UX Design",
+      technologies: ["3D Art", "Metallic Design", "Abstract", "Chrome Effects"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 24,
+      title: "Neural Network Visualization",
+      description: "Digital brain neural network with glowing synapses and AI consciousness visualization.",
+      image: neuralNetwork,
+      category: "UI/UX Design",
+      technologies: ["AI Visualization", "Neural Networks", "Digital Brain", "Tech Art"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 25,
+      title: "Cosmic Portal Gateway",
+      description: "A cosmic space portal with swirling galaxies, stellar formations, and nebulae in vibrant colors.",
+      image: cosmicPortal,
+      category: "UI/UX Design",
+      technologies: ["Space Art", "Cosmic Design", "Galaxy Effects", "Portal Design"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 26,
+      title: "Holographic Data Interface",
+      description: "Futuristic data visualization with floating charts, graphs, and holographic UI elements.",
+      image: dataVisualization,
+      category: "UI/UX Design",
+      technologies: ["Data Viz", "Holographic UI", "Futuristic Design", "Interface Design"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 27,
+      title: "Digital Crystal Formation",
+      description: "Magical crystal formation with prismatic light refractions and rainbow spectrum colors.",
+      image: crystalFormation,
+      category: "UI/UX Design",
+      technologies: ["Crystal Art", "Prismatic Effects", "Magic Design", "Rainbow Colors"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 28,
+      title: "Virtual Reality Landscape",
+      description: "Retro 80s VR landscape with digital terrain, pixelated mountains, and synthwave aesthetics.",
+      image: vrLandscape,
+      category: "UI/UX Design",
+      technologies: ["VR Design", "Synthwave", "Retro 80s", "Digital Terrain"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 29,
+      title: "Quantum Computing Visualization",
+      description: "Scientific visualization of quantum computing with particle physics and molecular structures.",
+      image: quantumComputing,
+      category: "UI/UX Design",
+      technologies: ["Quantum Viz", "Scientific Art", "Particle Physics", "Molecular Design"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
+    },
+    {
+      id: 30,
+      title: "Digital Phoenix Rising",
+      description: "A digital phoenix rising from binary code with fire effects made of data streams.",
+      image: digitalPhoenix,
+      category: "UI/UX Design",
+      technologies: ["Phoenix Art", "Binary Code", "Data Streams", "Fire Effects"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
     }
   ];
 
