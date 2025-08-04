@@ -93,9 +93,15 @@ const Footer = () => {
               <p>Ready to start your project?</p>
               <a 
                 href="mailto:webgenyx0@gmail.com"
-                className="text-primary hover:text-primary/80 transition-colors duration-300"
+                className="text-primary hover:text-primary/80 transition-colors duration-300 block"
               >
                 webgenyx0@gmail.com
+              </a>
+              <a 
+                href="tel:+2349022866179"
+                className="text-primary hover:text-primary/80 transition-colors duration-300 block"
+              >
+                +234 902 286 6179
               </a>
             </div>
           </div>
