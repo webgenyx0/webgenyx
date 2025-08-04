@@ -11,6 +11,7 @@ import restaurantWebsite from "@/assets/restaurant-website.jpg";
 import portfolioWebsite from "@/assets/portfolio-website.jpg";
 import taskManagementApp from "@/assets/task-management-app.jpg";
 import corporateWebsite from "@/assets/corporate-website.jpg";
+import digitalArtwork from "@/assets/digital-artwork.jpg";
 
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
@@ -240,6 +241,17 @@ const Portfolio = () => {
       liveUrl: "#",
       githubUrl: "#",
       featured: false
+    },
+    {
+      id: 21,
+      title: "Digital Artwork Collection",
+      description: "An AI-generated digital artwork featuring abstract geometric shapes and vibrant neon colors with futuristic elements.",
+      image: digitalArtwork,
+      category: "UI/UX Design",
+      technologies: ["AI Art", "Digital Design", "Abstract Art", "Neon Colors"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true
     }
   ];
 
