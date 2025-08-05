@@ -48,7 +48,7 @@ const Home = () => {
         </div>
         
         <div className="container mx-auto text-center relative z-10">
-          <div className={`transition-all duration-1000 ${loaded ? 'animate-fade-in-up' : 'opacity-0'}`}>
+          <div className={`transition-all duration-1000 ${loaded ? 'animate-slide-in-right' : 'opacity-0 translate-x-full'}`}>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Building the{" "}
               <span className="hero-text animate-text-shimmer bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-green bg-[length:200%_auto]">
