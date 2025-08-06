@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, ArrowRight, Code, Zap, Globe, Star, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -7,6 +7,15 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const HomeTemplateCarousel = () => {
   const [currentTemplate, setCurrentTemplate] = useState(0);
+
+  // Auto-slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTemplate((prev) => (prev + 1) % 3);
+    }, 4000); // Change template every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const nextTemplate = () => {
     setCurrentTemplate((prev) => (prev + 1) % 3);
