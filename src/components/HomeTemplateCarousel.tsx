@@ -12,7 +12,7 @@ const HomeTemplateCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTemplate((prev) => (prev + 1) % 3);
-    }, 4000); // Change template every 4 seconds
+    }, 360000); // Change template every 6 minutes
 
     return () => clearInterval(interval);
   }, []);
