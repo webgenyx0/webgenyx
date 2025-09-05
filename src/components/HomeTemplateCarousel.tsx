@@ -12,7 +12,7 @@ const HomeTemplateCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTemplate((prev) => (prev + 1) % 3);
-    }, 360000); // Change template every 6 minutes
+    }, 15000); // Auto-rotate every 15 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -427,6 +427,13 @@ const HomeTemplateCarousel = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-20">
+            <div className="flex items-center justify-center mb-8">
+              <img 
+                src="/lovable-uploads/2d87a2ca-1d5e-44c7-ba30-a0e6bcf0b7fe.png" 
+                alt="Website Development Key" 
+                className="w-32 h-24 object-contain hover:scale-105 transition-transform duration-300"
+              />
+            </div>
             <h1 className="text-6xl md:text-8xl font-light mb-8 tracking-tight">
               <span className="block text-muted-foreground">Hello, I'm</span>
               <span className="hero-text font-bold">Boluwatife</span>
@@ -669,6 +676,13 @@ const HomeTemplateCarousel = () => {
                 <span className="text-sm font-medium">Available for Projects</span>
               </div>
               
+              <div className="flex items-center justify-center mb-8">
+                <img 
+                  src="/lovable-uploads/3c20ac59-504c-4393-83bc-c724d7ddf680.png" 
+                  alt="Website Development Key" 
+                  className="w-32 h-24 object-contain hover:scale-105 transition-transform duration-300"
+                />
+              </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Creative{" "}
                 <span className="hero-text bg-gradient-to-r from-primary via-neon-cyan to-neon-purple bg-clip-text text-transparent animate-gradient">
