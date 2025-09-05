@@ -429,7 +429,7 @@ const HomeTemplateCarousel = () => {
           <div className="text-center mb-20">
             <div className="flex items-center justify-center mb-8">
               <img 
-                src="/lovable-uploads/2d87a2ca-1d5e-44c7-ba30-a0e6bcf0b7fe.png" 
+                src="/lovable-uploads/fe07937c-0140-46a8-a377-18a3d6f62046.png" 
                 alt="Website Development Key" 
                 className="w-32 h-24 object-contain hover:scale-105 transition-transform duration-300"
               />
