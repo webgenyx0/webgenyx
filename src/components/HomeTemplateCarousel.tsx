@@ -428,10 +428,13 @@ const HomeTemplateCarousel = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-20">
             <div className="flex items-center justify-center mb-8">
-              <img 
-                src="/lovable-uploads/2b603bef-1b61-43a2-a441-33af85cddc96.png" 
-                alt="Website Development Key" 
-                className="w-32 h-24 object-contain hover:scale-105 transition-transform duration-300"
+              <video 
+                src="/lovable-uploads/template2-banner.mp4" 
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-64 h-36 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
               />
             </div>
             <h1 className="text-6xl md:text-8xl font-light mb-8 tracking-tight">
