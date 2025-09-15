@@ -421,246 +421,130 @@ const HomeTemplateCarousel = () => {
     </div>
   );
 
-  // Template 2: Minimalist Design
+  // Template 2: Dark Tech Design
   const Template2 = () => (
-    <div className="min-h-screen bg-background">
-      <section className="pt-32 pb-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-20">
-            <div className="flex items-center justify-center mb-8">
-              <video 
-                src="/lovable-uploads/template2-banner.mp4" 
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-64 h-36 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h1 className="text-6xl md:text-8xl font-light mb-8 tracking-tight">
-              <span className="block text-muted-foreground">Hello, I'm</span>
-              <span className="hero-text font-bold">Boluwatife</span>
-            </h1>
-            <p className="text-2xl text-muted-foreground mb-12 font-light max-w-3xl mx-auto">
-              Web Developer & Digital Craftsman specializing in clean, purposeful design that prioritizes user experience above all else. 
-              I believe in the power of simplicity, where every element serves a purpose and every interaction feels natural and intuitive.
-            </p>
+    <div className="min-h-screen bg-slate-900 relative overflow-hidden">
+      {/* Background Tech Pattern */}
+      <div className="absolute inset-0 opacity-20">
+        <video 
+          src="/lovable-uploads/template2-banner.mp4" 
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-purple-900/60"></div>
+      </div>
+      
+      <section className="relative z-10 pt-32 pb-20 px-4">
+        <div className="container mx-auto max-w-6xl text-center">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white">
+            Building the{" "}
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-300 bg-clip-text text-transparent animate-text-shimmer bg-[length:200%_auto]">
+              future
+            </span>{" "}
+            of the web
+          </h1>
+          <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+            One pixel at a time. I'm{" "}
+            <span className="text-cyan-400 font-semibold">Boluwatife Omobuwajo</span>, 
+            founder of WebGenyx, crafting exceptional digital experiences that drive 
+            results and inspire innovation. With a passion for cutting-edge 
+            technology and an eye for stunning design, I transform complex business 
+            challenges into elegant, user-friendly solutions that captivate audiences 
+            and deliver measurable results.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+            <Link to="/portfolio">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-400 hover:to-purple-500 text-white border-0 hover:scale-105 transition-all duration-300 text-lg px-8 py-6 shadow-2xl hover:shadow-cyan-500/25"
+              >
+                Explore My Work
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 text-lg px-8 py-6"
+              >
+                Let's Connect
+              </Button>
+            </Link>
           </div>
-          
-          {/* Core Philosophy */}
-          <section className="mb-24">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-light mb-8">The Art of Simplicity</h2>
-              <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                In a world overwhelmed by digital noise, I create spaces of clarity. My work is guided by the belief that 
-                the best interfaces are the ones you don't notice—they simply work, elegantly and efficiently.
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-12 mb-20">
-              {[
-                { 
-                  icon: <Code className="h-8 w-8" />, 
-                  title: "Clean Development", 
-                  desc: "Writing maintainable, semantic code that stands the test of time. Every line has purpose, every function has clarity. I believe in crafting code that reads like poetry—beautiful, meaningful, and enduring.",
-                  approach: "Less is more",
-                  details: ["Semantic HTML", "Modern CSS", "Clean Architecture", "Minimal Dependencies"]
-                },
-                { 
-                  icon: <Zap className="h-8 w-8" />, 
-                  title: "Peak Performance", 
-                  desc: "Optimized for speed and efficiency. Sites that load instantly and feel responsive. Performance isn't just a metric—it's a user experience philosophy that respects people's time and attention.",
-                  approach: "Speed matters",
-                  details: ["Sub-second loads", "Optimized assets", "Lazy loading", "Efficient caching"]
-                },
-                { 
-                  icon: <Globe className="h-8 w-8" />, 
-                  title: "Universal Access", 
-                  desc: "Accessible, inclusive design that works for everyone, everywhere, on any device. Good design should never exclude—it should welcome and embrace all users with equal grace.",
-                  approach: "Design for all",
-                  details: ["WCAG compliance", "Mobile-first", "Cross-browser", "Keyboard navigation"]
-                }
-              ].map((item, index) => (
-                <Card key={index} className="p-8 text-center hover:shadow-lg transition-all duration-500 border-none bg-muted/20 group">
-                  <div className="text-primary mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                  <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">{item.desc}</p>
-                  <div className="text-sm font-medium text-primary italic mb-4">{item.approach}</div>
-                  <div className="space-y-1">
-                    {item.details.map((detail, detailIndex) => (
-                      <div key={detailIndex} className="text-xs text-muted-foreground bg-muted/50 rounded px-2 py-1">
-                        {detail}
-                      </div>
-                    ))}
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </section>
+        </div>
+      </section>
 
-          {/* Methodology Section */}
-          <section className="py-20 border-t border-muted">
-            <div className="max-w-5xl mx-auto">
-              <h2 className="text-3xl font-light text-center mb-16">Design Methodology</h2>
-              <div className="grid md:grid-cols-2 gap-16">
-                <div>
-                  <h3 className="text-2xl font-light mb-8">Philosophy</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                    Great design is invisible. It serves the user without drawing attention to itself. 
-                    My approach focuses on clarity, functionality, and the seamless integration of form and purpose.
-                    Every pixel is intentional, every interaction is meaningful.
-                  </p>
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-medium mb-3">Core Principles</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>Simplicity over complexity—remove until you can't remove anymore</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>Function drives form—every visual decision serves a purpose</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>User needs first—empathy guides every design choice</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>Performance is paramount—speed is a feature, not a bonus</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-light mb-8">Process</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                    Every project begins with deep understanding. I don't just build what you ask for—I explore 
-                    what you actually need. Through research, iteration, and refinement, we discover the essence 
-                    of your vision.
-                  </p>
-                  <div className="space-y-6">
-                    <div>
-                      <h4 className="font-medium mb-3">Workflow</h4>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>Research and understand—deep dive into user needs and business goals</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>Prototype and test—rapid iteration with real user feedback</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>Iterate and refine—continuous improvement until perfection</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <span>Launch and optimize—ongoing refinement based on real data</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Minimal Stats */}
-          <section className="py-20 border-t border-muted">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-light text-center mb-16">By the Numbers</h2>
-              <div className="grid md:grid-cols-4 gap-8 text-center">
-                {[
-                  { number: "50+", label: "Projects", sublabel: "Crafted with care" },
-                  { number: "25+", label: "Clients", sublabel: "Trusted partnerships" },
-                  { number: "95%", label: "Satisfaction", sublabel: "Proven results" },
-                  { number: "3+", label: "Years", sublabel: "Focused expertise" }
-                ].map((stat, index) => (
-                  <div key={index} className="group">
-                    <div className="text-5xl font-light text-primary mb-2">{stat.number}</div>
-                    <div className="font-medium mb-1">{stat.label}</div>
-                    <div className="text-sm text-muted-foreground">{stat.sublabel}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* Featured Work Preview */}
-          <section className="py-20 border-t border-muted">
-            <h2 className="text-3xl font-light text-center mb-8">Selected Work</h2>
-            <p className="text-lg text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
-              Each project is a study in restraint and purpose. These examples showcase how minimalist 
-              principles can create maximum impact.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-500 group">
-                <div className="h-48 bg-gradient-to-br from-primary/10 to-primary/5 group-hover:from-primary/15 group-hover:to-primary/10 transition-all duration-500"></div>
-                <div className="p-6">
-                  <h3 className="font-semibold mb-2">E-commerce Platform</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Clean, conversion-focused design with 40% increase in sales</p>
-                  <div className="text-xs text-muted-foreground">Minimalist • E-commerce • Conversion</div>
+      {/* Tech Features */}
+      <section className="relative z-10 py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { 
+                icon: <Code className="h-8 w-8" />, 
+                title: "Modern Development", 
+                desc: "Clean, scalable code built with the latest technologies and best practices.",
+                tech: ["React", "TypeScript", "Node.js", "Next.js"]
+              },
+              { 
+                icon: <Zap className="h-8 w-8" />, 
+                title: "Lightning Fast", 
+                desc: "Optimized for performance with sub-second load times and smooth interactions.",
+                tech: ["Performance", "Optimization", "Caching", "CDN"]
+              },
+              { 
+                icon: <Globe className="h-8 w-8" />, 
+                title: "Global Reach", 
+                desc: "Accessible, responsive designs that work perfectly on any device, anywhere.",
+                tech: ["Responsive", "PWA", "SEO", "A11y"]
+              }
+            ].map((item, index) => (
+              <Card key={index} className="p-8 bg-slate-800/50 border-slate-700 hover:bg-slate-800/70 transition-all duration-300 hover:scale-105 group">
+                <div className="text-cyan-400 mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                <h3 className="text-xl font-semibold mb-4 text-white text-center">{item.title}</h3>
+                <p className="text-slate-300 mb-6 text-center leading-relaxed">{item.desc}</p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {item.tech.map((tech, techIndex) => (
+                    <span key={techIndex} className="bg-slate-700/50 text-cyan-300 px-3 py-1 rounded-full text-sm font-medium hover:bg-cyan-400/20 transition-colors duration-200">
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </Card>
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-500 group">
-                <div className="h-48 bg-gradient-to-br from-muted to-muted/50 group-hover:from-muted/80 group-hover:to-muted/30 transition-all duration-500"></div>
-                <div className="p-6">
-                  <h3 className="font-semibold mb-2">SaaS Dashboard</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Intuitive interface design that reduced user onboarding time by 60%</p>
-                  <div className="text-xs text-muted-foreground">Dashboard • SaaS • UX/UI</div>
-                </div>
-              </Card>
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-500 group">
-                <div className="h-48 bg-gradient-to-br from-primary/5 to-muted/20 group-hover:from-primary/10 group-hover:to-muted/40 transition-all duration-500"></div>
-                <div className="p-6">
-                  <h3 className="font-semibold mb-2">Portfolio Website</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Elegant showcase that increased client inquiries by 80%</p>
-                  <div className="text-xs text-muted-foreground">Portfolio • Creative • Minimal</div>
-                </div>
-              </Card>
-            </div>
-          </section>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {/* Testimonial */}
-          <section className="py-20 border-t border-muted">
-            <div className="max-w-4xl mx-auto text-center">
-              <blockquote className="text-2xl font-light text-muted-foreground italic mb-8 leading-relaxed">
-                "Boluwatife's minimalist approach transformed our complex product into something beautifully simple. 
-                Our users finally understand what we do, and our conversion rates have tripled."
-              </blockquote>
-              <div className="flex items-center justify-center gap-4">
-                <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center">
-                  <span className="text-muted-foreground font-medium">E</span>
-                </div>
-                <div className="text-left">
-                  <div className="font-medium">Elena Rodriguez</div>
-                  <div className="text-sm text-muted-foreground">Head of Product, TechFlow</div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <div className="text-center border-t border-muted pt-20">
-            <h2 className="text-3xl font-light mb-8">Ready to simplify?</h2>
-            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Let's strip away the unnecessary and focus on what truly matters—creating experiences 
-              that serve your users and achieve your goals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/portfolio">
-                <Button size="lg" className="font-light">
-                  View Complete Portfolio
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="outline" size="lg" className="font-light">
-                  Start a Conversation
-                </Button>
-              </Link>
-            </div>
+      {/* CTA Section */}
+      <section className="relative z-10 py-20 px-4">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-8 text-white">Ready to Build Something Amazing?</h2>
+          <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
+            Let's collaborate and bring your digital vision to life with cutting-edge technology and stunning design.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-purple-600 to-cyan-500 hover:from-purple-500 hover:to-cyan-400 text-white border-0 hover:scale-105 transition-all duration-300 text-lg px-8 py-6"
+              >
+                Start Your Project
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link to="/portfolio">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-slate-400 text-slate-400 hover:bg-slate-400 hover:text-slate-900 transition-all duration-300 text-lg px-8 py-6"
+              >
+                View Portfolio
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
