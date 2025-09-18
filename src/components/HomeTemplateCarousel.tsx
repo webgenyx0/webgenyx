@@ -29,33 +29,34 @@ const HomeTemplateCarousel = () => {
     setCurrentTemplate(index);
   };
 
-  // Template 1: Original Design
+  // Template 1: Original Design with Video Banner
   const Template1 = () => (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-slate-900 relative overflow-hidden">
       <section className="relative overflow-hidden pt-24 pb-16 px-4">
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          <div className="absolute inset-0 bg-background/80" />
+        {/* Background Video */}
+        <div className="absolute inset-0 z-0">
+          <video 
+            src="/lovable-uploads/template2-banner.mp4" 
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/80 to-background/60"></div>
         </div>
         
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
             Building the{" "}
-            <span className="hero-text animate-text-shimmer bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-green bg-[length:200%_auto]">
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-300 bg-clip-text text-transparent animate-text-shimmer bg-[length:200%_auto]">
               future
             </span>{" "}
             of the web
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
             One pixel at a time. I'm{" "}
-            <span className="text-primary font-semibold">Boluwatife Omobuwajo</span>, 
+            <span className="text-cyan-400 font-semibold">Boluwatife Omobuwajo</span>, 
             founder of WebGenyx, crafting exceptional digital experiences that drive results and inspire innovation. 
             With a passion for cutting-edge technology and an eye for stunning design, I transform complex business 
             challenges into elegant, user-friendly solutions that captivate audiences and deliver measurable results.
