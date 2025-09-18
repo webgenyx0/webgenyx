@@ -551,16 +551,29 @@ const HomeTemplateCarousel = () => {
     </div>
   );
 
-  // Template 3: Bold & Dynamic
+  // Template 3: Bold & Dynamic with Video Banner
   const Template3 = () => (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
-      <section className="pt-20 pb-16 px-4">
+    <div className="min-h-screen bg-slate-900 relative overflow-hidden">
+      {/* Background Tech Pattern with Video */}
+      <div className="absolute inset-0 opacity-30">
+        <video 
+          src="/lovable-uploads/template2-banner.mp4" 
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-900/90 to-primary/20"></div>
+      </div>
+      
+      <section className="relative z-10 pt-32 pb-20 px-4">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
             <div>
-              <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 mb-6 animate-pulse">
+              <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-pulse backdrop-blur-sm">
                 <Star className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium">Available for Projects</span>
+                <span className="text-sm font-medium text-white">Available for Projects</span>
               </div>
               
               <div className="flex items-center justify-center mb-8">
@@ -570,32 +583,31 @@ const HomeTemplateCarousel = () => {
                   className="w-32 h-24 object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white">
                 Creative{" "}
-                <span className="hero-text bg-gradient-to-r from-primary via-neon-cyan to-neon-purple bg-clip-text text-transparent animate-gradient">
+                <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-300 bg-clip-text text-transparent animate-text-shimmer bg-[length:200%_auto]">
                   Web Solutions
                 </span>{" "}
                 That Convert
               </h1>
               
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed">
                 Transforming bold ideas into powerful digital experiences that captivate, engage, and convert. 
-                I specialize in creating modern web applications that don't just look stunning—they drive real business growth, 
-                exceed performance expectations, and set new standards in your industry.
+                I specialize in creating modern web applications that don't just look stunning—they drive real business growth.
               </p>
 
               <div className="flex items-center gap-6 mb-8">
                 <div className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-primary" />
-                  <span className="font-semibold">25+ Clients</span>
+                  <Users className="h-5 w-5 text-cyan-400" />
+                  <span className="font-semibold text-white">25+ Clients</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Award className="h-5 w-5 text-primary" />
-                  <span className="font-semibold">50+ Projects</span>
+                  <Award className="h-5 w-5 text-purple-400" />
+                  <span className="font-semibold text-white">50+ Projects</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Star className="h-5 w-5 text-primary" />
-                  <span className="font-semibold">95% Success Rate</span>
+                  <Star className="h-5 w-5 text-cyan-400" />
+                  <span className="font-semibold text-white">95% Success Rate</span>
                 </div>
               </div>
 
