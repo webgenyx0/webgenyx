@@ -549,6 +549,74 @@ const HomeTemplateCarousel = () => {
           </div>
         </div>
       </section>
+      
+      {/* Digital Journey Section from Template 1 */}
+      <section className="py-20 px-4 bg-slate-800/50 relative z-10">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl font-bold mb-8 text-white">My Digital Journey</h2>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              From writing my first line of code to building enterprise-level applications, my journey has been 
+              driven by an insatiable curiosity for technology and a commitment to excellence.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-white">The Beginning</h3>
+              <p className="text-slate-300 mb-6 leading-relaxed">
+                My fascination with web development began during my university years when I discovered the power 
+                of creating something from nothing—just code, creativity, and determination.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-cyan-400 mb-2">2020</div>
+                  <div className="text-sm text-slate-300">Started Coding</div>
+                </div>
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-purple-400 mb-2">2021</div>
+                  <div className="text-sm text-slate-300">First Client</div>
+                </div>
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-cyan-400 mb-2">2022</div>
+                  <div className="text-sm text-slate-300">Founded WebGenyx</div>
+                </div>
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-purple-400 mb-2">2024</div>
+                  <div className="text-sm text-slate-300">50+ Projects</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Card className="p-8 bg-slate-700/80 backdrop-blur-sm border border-slate-600">
+                <h3 className="text-xl font-semibold mb-4 text-white">Core Values</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="font-medium mb-1 text-white">Innovation First</h4>
+                      <p className="text-sm text-slate-300">Always exploring new technologies and methodologies to stay ahead of the curve.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="font-medium mb-1 text-white">Quality Excellence</h4>
+                      <p className="text-sm text-slate-300">Delivering exceptional results that exceed expectations and drive business growth.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="font-medium mb-1 text-white">Client Partnership</h4>
+                      <p className="text-sm text-slate-300">Building lasting relationships through collaboration and transparent communication.</p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 
@@ -688,6 +756,74 @@ const HomeTemplateCarousel = () => {
                 <p className="text-muted-foreground text-sm">{impact.description}</p>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Journey Section from Template 1 */}
+      <section className="py-20 px-4 bg-slate-800/50">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl font-bold mb-8 text-white">My Digital Journey</h2>
+            <p className="text-xl text-slate-300 leading-relaxed">
+              From writing my first line of code to building enterprise-level applications, my journey has been 
+              driven by an insatiable curiosity for technology and a commitment to excellence.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-semibold mb-6 text-white">The Beginning</h3>
+              <p className="text-slate-300 mb-6 leading-relaxed">
+                My fascination with web development began during my university years when I discovered the power 
+                of creating something from nothing—just code, creativity, and determination.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-cyan-400 mb-2">2020</div>
+                  <div className="text-sm text-slate-300">Started Coding</div>
+                </div>
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-purple-400 mb-2">2021</div>
+                  <div className="text-sm text-slate-300">First Client</div>
+                </div>
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-cyan-400 mb-2">2022</div>
+                  <div className="text-sm text-slate-300">Founded WebGenyx</div>
+                </div>
+                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
+                  <div className="text-2xl font-bold text-purple-400 mb-2">2024</div>
+                  <div className="text-sm text-slate-300">50+ Projects</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <Card className="p-8 bg-slate-700/80 backdrop-blur-sm border border-slate-600">
+                <h3 className="text-xl font-semibold mb-4 text-white">Core Values</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="font-medium mb-1 text-white">Innovation First</h4>
+                      <p className="text-sm text-slate-300">Always exploring new technologies and methodologies to stay ahead of the curve.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="font-medium mb-1 text-white">Quality Excellence</h4>
+                      <p className="text-sm text-slate-300">Delivering exceptional results that exceed expectations and drive business growth.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="font-medium mb-1 text-white">Client Partnership</h4>
+                      <p className="text-sm text-slate-300">Building lasting relationships through collaboration and transparent communication.</p>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
