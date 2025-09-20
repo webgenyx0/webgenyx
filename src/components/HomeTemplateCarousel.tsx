@@ -428,7 +428,7 @@ const HomeTemplateCarousel = () => {
       {/* Background Tech Pattern */}
       <div className="absolute inset-0 opacity-20">
         <video 
-          src="/lovable-uploads/template2-banner.mp4" 
+          src="/lovable-uploads/template2-custom-banner.mp4" 
           autoPlay
           loop
           muted
