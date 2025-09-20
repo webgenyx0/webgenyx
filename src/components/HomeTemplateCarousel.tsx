@@ -620,205 +620,135 @@ const HomeTemplateCarousel = () => {
     </div>
   );
 
-  // Template 3: Bold & Dynamic with Video Banner
+  // Template 3: Original Design with Video Banner (Like Template 1)
   const Template3 = () => (
     <div className="min-h-screen bg-slate-900 relative overflow-hidden">
-      {/* Background Tech Pattern with Video */}
-      <div className="absolute inset-0 opacity-30">
-        <video 
-          src="/lovable-uploads/template2-banner.mp4" 
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-900/90 to-primary/20"></div>
-      </div>
-      
-      <section className="relative z-10 pt-32 pb-20 px-4">
-        <div className="container mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
-            <div>
-              <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-6 animate-pulse backdrop-blur-sm">
-                <Star className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium text-white">Available for Projects</span>
-              </div>
-              
-              <div className="flex items-center justify-center mb-8">
-                <img 
-                  src="/lovable-uploads/3c20ac59-504c-4393-83bc-c724d7ddf680.png" 
-                  alt="Website Development Key" 
-                  className="w-32 h-24 object-contain hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white">
-                Creative{" "}
-                <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-300 bg-clip-text text-transparent animate-text-shimmer bg-[length:200%_auto]">
-                  Web Solutions
-                </span>{" "}
-                That Convert
-              </h1>
-              
-              <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed">
-                Transforming bold ideas into powerful digital experiences that captivate, engage, and convert. 
-                I specialize in creating modern web applications that don't just look stunning—they drive real business growth.
-              </p>
-
-              <div className="flex items-center gap-6 mb-8">
-                <div className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-cyan-400" />
-                  <span className="font-semibold text-white">25+ Clients</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Award className="h-5 w-5 text-purple-400" />
-                  <span className="font-semibold text-white">50+ Projects</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Star className="h-5 w-5 text-cyan-400" />
-                  <span className="font-semibold text-white">95% Success Rate</span>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Link to="/portfolio">
-                  <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 hover:scale-105">
-                    See My Work
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-                <Link to="/contact">
-                  <Button variant="outline" size="lg" className="hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                    Start a Project
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="relative z-10 bg-card border rounded-lg p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-xl font-semibold mb-4">Latest Achievement</h3>
-                <p className="text-muted-foreground mb-4">
-                  "Delivered a 300% increase in conversion rates for our latest client project—exceeding industry benchmarks 
-                  and setting new performance standards."
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold text-sm">B</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold">Boluwatife Omobuwajo</p>
-                    <p className="text-sm text-muted-foreground">Founder, WebGenyx</p>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl animate-pulse" />
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-neon-cyan/20 rounded-full blur-xl animate-pulse" />
-            </div>
+      <section className="relative overflow-hidden pt-24 pb-16 px-4">
+        {/* Background Video */}
+        <div className="absolute inset-0 z-0">
+          <video 
+            src="/lovable-uploads/template2-banner.mp4" 
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/80 to-background/60"></div>
+        </div>
+        
+        <div className="container mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
+            Building the{" "}
+            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-300 bg-clip-text text-transparent animate-text-shimmer bg-[length:200%_auto]">
+              future
+            </span>{" "}
+            of the web
+          </h1>
+          <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto">
+            One pixel at a time. I'm{" "}
+            <span className="text-cyan-400 font-semibold">Boluwatife Omobuwajo</span>, 
+            founder of WebGenyx, crafting exceptional digital experiences that drive results and inspire innovation. 
+            With a passion for cutting-edge technology and an eye for stunning design, I transform complex business 
+            challenges into elegant, user-friendly solutions that captivate audiences and deliver measurable results.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <Link to="/portfolio">
+              <Button 
+                size="lg" 
+                className="bg-gradient-primary hover:shadow-glow transition-all duration-300 hover:scale-105 text-lg px-8 py-6"
+              >
+                Explore My Work
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="neon-border hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6"
+              >
+                Let's Connect
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary/5 via-background to-primary/5">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-8">Driving Real Impact</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Every project I undertake is designed to deliver measurable results. Here's how my work creates value for businesses:
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                metric: "300%",
-                label: "Average Conversion Increase",
-                description: "Strategic design and optimization that turns visitors into customers",
-                icon: "📈"
-              },
-              {
-                metric: "95+",
-                label: "PageSpeed Score",
-                description: "Lightning-fast performance that Google and users love",
-                icon: "⚡"
-              },
-              {
-                metric: "40%",
-                label: "Bounce Rate Reduction",
-                description: "Engaging experiences that keep users on your site longer",
-                icon: "🎯"
-              }
-            ].map((impact, index) => (
-              <Card key={index} className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-br from-card to-card/50">
-                <div className="text-4xl mb-4">{impact.icon}</div>
-                <div className="text-4xl font-bold text-primary mb-2">{impact.metric}</div>
-                <h3 className="text-lg font-semibold mb-3">{impact.label}</h3>
-                <p className="text-muted-foreground text-sm">{impact.description}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Digital Journey Section from Template 1 */}
-      <section className="py-20 px-4 bg-slate-800/50">
+      {/* Journey Section */}
+      <section className="py-20 px-4 bg-muted/20">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center mb-16">
-            <h2 className="text-4xl font-bold mb-8 text-white">My Digital Journey</h2>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <h2 className="text-4xl font-bold mb-8">My Digital Journey</h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">
               From writing my first line of code to building enterprise-level applications, my journey has been 
-              driven by an insatiable curiosity for technology and a commitment to excellence.
+              driven by an insatiable curiosity for technology and a commitment to excellence. Every project 
+              teaches me something new, and every challenge becomes an opportunity to innovate and grow.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-semibold mb-6 text-white">The Beginning</h3>
-              <p className="text-slate-300 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-semibold mb-6">The Beginning</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 My fascination with web development began during my university years when I discovered the power 
-                of creating something from nothing—just code, creativity, and determination.
+                of creating something from nothing—just code, creativity, and determination. What started as a 
+                hobby quickly evolved into a passion project, then into freelance work, and eventually into 
+                founding WebGenyx.
+              </p>
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                The early days were filled with late nights, countless tutorials, and the thrill of seeing 
+                ideas come to life in the browser. Each successful deployment was a victory, each bug fixed 
+                was a lesson learned, and each satisfied client was validation that I was on the right path.
               </p>
               <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
-                  <div className="text-2xl font-bold text-cyan-400 mb-2">2020</div>
-                  <div className="text-sm text-slate-300">Started Coding</div>
+                <div className="text-center p-4 bg-card rounded-lg">
+                  <div className="text-2xl font-bold text-primary mb-2">2020</div>
+                  <div className="text-sm text-muted-foreground">Started Coding</div>
                 </div>
-                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
-                  <div className="text-2xl font-bold text-purple-400 mb-2">2021</div>
-                  <div className="text-sm text-slate-300">First Client</div>
+                <div className="text-center p-4 bg-card rounded-lg">
+                  <div className="text-2xl font-bold text-primary mb-2">2021</div>
+                  <div className="text-sm text-muted-foreground">First Client</div>
                 </div>
-                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
-                  <div className="text-2xl font-bold text-cyan-400 mb-2">2022</div>
-                  <div className="text-sm text-slate-300">Founded WebGenyx</div>
+                <div className="text-center p-4 bg-card rounded-lg">
+                  <div className="text-2xl font-bold text-primary mb-2">2022</div>
+                  <div className="text-sm text-muted-foreground">Founded WebGenyx</div>
                 </div>
-                <div className="text-center p-4 bg-slate-700/80 backdrop-blur-sm rounded-lg border border-slate-600">
-                  <div className="text-2xl font-bold text-purple-400 mb-2">2024</div>
-                  <div className="text-sm text-slate-300">50+ Projects</div>
+                <div className="text-center p-4 bg-card rounded-lg">
+                  <div className="text-2xl font-bold text-primary mb-2">2024</div>
+                  <div className="text-sm text-muted-foreground">50+ Projects</div>
                 </div>
               </div>
             </div>
             <div>
-              <Card className="p-8 bg-slate-700/80 backdrop-blur-sm border border-slate-600">
-                <h3 className="text-xl font-semibold mb-4 text-white">Core Values</h3>
+              <Card className="p-8 bg-gradient-to-br from-primary/5 to-primary/10">
+                <h3 className="text-xl font-semibold mb-4">Core Values</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                     <div>
-                      <h4 className="font-medium mb-1 text-white">Innovation First</h4>
-                      <p className="text-sm text-slate-300">Always exploring new technologies and methodologies to stay ahead of the curve.</p>
+                      <h4 className="font-medium mb-1">Innovation First</h4>
+                      <p className="text-sm text-muted-foreground">Always exploring new technologies and methodologies to stay ahead of the curve.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                     <div>
-                      <h4 className="font-medium mb-1 text-white">Quality Excellence</h4>
-                      <p className="text-sm text-slate-300">Delivering exceptional results that exceed expectations and drive business growth.</p>
+                      <h4 className="font-medium mb-1">Quality Excellence</h4>
+                      <p className="text-sm text-muted-foreground">Every line of code is crafted with precision and attention to detail.</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2"></div>
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                     <div>
-                      <h4 className="font-medium mb-1 text-white">Client Partnership</h4>
-                      <p className="text-sm text-slate-300">Building lasting relationships through collaboration and transparent communication.</p>
+                      <h4 className="font-medium mb-1">Client Success</h4>
+                      <p className="text-sm text-muted-foreground">Your success is my success. Every project is a partnership toward your goals.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
+                    <div>
+                      <h4 className="font-medium mb-1">Continuous Learning</h4>
+                      <p className="text-sm text-muted-foreground">The tech landscape evolves rapidly, and so do I.</p>
                     </div>
                   </div>
                 </div>
@@ -828,98 +758,97 @@ const HomeTemplateCarousel = () => {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 px-4 bg-muted/20">
+      {/* Skills Section */}
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">My Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-8">What I Do Best</h2>
           <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
-            I offer comprehensive digital solutions that cover every aspect of your online presence. 
-            From strategy to implementation, I ensure your project succeeds at every level.
+            My expertise spans the entire development stack, from pixel-perfect frontend interfaces to robust 
+            backend architectures. Here's what I bring to every project:
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              {
-                title: "Web Development",
-                desc: "Custom web applications built with cutting-edge technologies for maximum performance and scalability. I create robust solutions that grow with your business and adapt to changing needs.",
-                features: ["React & Next.js", "TypeScript", "API Integration", "Database Design", "Cloud Deployment", "Performance Optimization"],
-                highlight: "Full-Stack Excellence"
+              { 
+                icon: <Code className="h-8 w-8" />, 
+                title: "Full-Stack Development", 
+                desc: "Building robust web applications with modern technologies like React, Node.js, and cloud platforms. From concept to deployment, I handle every aspect of development with meticulous attention to detail and best practices.",
+                skills: ["React", "TypeScript", "Node.js", "PostgreSQL", "MongoDB", "Docker", "AWS", "Vercel"],
+                highlight: "End-to-end solutions"
               },
-              {
-                title: "UI/UX Design",
-                desc: "User-centered design that converts visitors into customers through intuitive interfaces and seamless experiences. Every interaction is carefully crafted to guide users toward your goals.",
-                features: ["User Research", "Wireframing", "Prototyping", "Design Systems", "Usability Testing", "Conversion Optimization"],
-                highlight: "Design That Converts"
+              { 
+                icon: <Zap className="h-8 w-8" />, 
+                title: "Performance Optimization", 
+                desc: "Creating lightning-fast websites that score 95+ on Google PageSpeed. Every millisecond matters in user experience and conversion rates. I optimize everything from code splitting to image delivery.",
+                skills: ["Core Web Vitals", "Lazy Loading", "CDN", "Caching", "Bundle Optimization", "Image Optimization"],
+                highlight: "Sub-second load times"
               },
-              {
-                title: "Digital Strategy",
-                desc: "Strategic digital marketing solutions that increase visibility, engagement, and drive measurable business results. I combine technical expertise with marketing know-how for maximum impact.",
-                features: ["SEO Optimization", "Analytics Setup", "Conversion Tracking", "Performance Marketing", "Growth Hacking", "A/B Testing"],
-                highlight: "Results-Driven Growth"
+              { 
+                icon: <Globe className="h-8 w-8" />, 
+                title: "Digital Strategy", 
+                desc: "Combining technical expertise with business acumen to create solutions that not only look great but drive measurable business growth. Strategy meets execution for maximum impact.",
+                skills: ["UX Design", "Analytics", "SEO", "Conversion", "A/B Testing", "Growth Hacking"],
+                highlight: "Business-driven results"
               }
-            ].map((service, index) => (
-              <Card key={index} className="p-8 hover:shadow-2xl transition-all duration-300 hover:scale-105 bg-card border-primary/10 group">
-                <h3 className="text-2xl font-bold mb-4 text-primary group-hover:text-primary/80 transition-colors">{service.title}</h3>
-                <div className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium mb-4 inline-block">
-                  {service.highlight}
+            ].map((item, index) => (
+              <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 hover:scale-105 group">
+                <div className="text-primary mb-6 flex justify-center group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                <h3 className="text-xl font-semibold mb-4 text-center">{item.title}</h3>
+                <div className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium text-center mb-4">
+                  {item.highlight}
                 </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed">{service.desc}</p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-sm font-medium">{feature}</span>
-                    </li>
+                <p className="text-muted-foreground mb-6 text-center leading-relaxed">{item.desc}</p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {item.skills.map((skill, skillIndex) => (
+                    <span key={skillIndex} className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-colors duration-200">
+                      {skill}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Technology Showcase */}
-      <section className="py-20 px-4">
+      {/* Technology Stack */}
+      <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">Cutting-Edge Technology Stack</h2>
+          <h2 className="text-4xl font-bold text-center mb-8">Technology Arsenal</h2>
           <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
-            I work with the latest and most powerful technologies to ensure your project is built for the future, 
-            not just today's requirements.
+            I work with cutting-edge technologies to build scalable, maintainable, and future-proof applications. 
+            My tech stack is carefully curated for maximum efficiency and reliability.
           </p>
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
+          <div className="grid md:grid-cols-4 gap-8">
             {[
               {
                 category: "Frontend",
-                icon: "🎨",
                 technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"],
                 color: "from-blue-500 to-cyan-500"
               },
               {
                 category: "Backend",
-                icon: "⚙️",
                 technologies: ["Node.js", "Express", "Python", "FastAPI", "GraphQL", "REST APIs"],
                 color: "from-green-500 to-emerald-500"
               },
               {
                 category: "Database",
-                icon: "💾",
                 technologies: ["PostgreSQL", "MongoDB", "Redis", "Supabase", "Prisma", "Firebase"],
                 color: "from-purple-500 to-pink-500"
               },
               {
                 category: "DevOps",
-                icon: "🚀",
                 technologies: ["Docker", "AWS", "Vercel", "GitHub Actions", "Nginx", "CI/CD"],
                 color: "from-orange-500 to-red-500"
               }
             ].map((stack, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 group">
-                <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${stack.color} flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform`}>
-                  <span className="text-2xl">{stack.icon}</span>
+              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+                <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${stack.color} flex items-center justify-center mb-4 mx-auto`}>
+                  <span className="text-white font-bold text-lg">{stack.category[0]}</span>
                 </div>
                 <h3 className="text-lg font-semibold text-center mb-4">{stack.category}</h3>
                 <div className="space-y-2">
                   {stack.technologies.map((tech, techIndex) => (
-                    <div key={techIndex} className="text-sm text-muted-foreground text-center py-1 px-2 bg-muted/50 rounded hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <div key={techIndex} className="text-sm text-muted-foreground text-center py-1 px-2 bg-muted/50 rounded">
                       {tech}
                     </div>
                   ))}
@@ -930,53 +859,66 @@ const HomeTemplateCarousel = () => {
         </div>
       </section>
 
-      {/* Case Studies Preview */}
-      <section className="py-20 px-4 bg-muted/20">
+      {/* Stats Section */}
+      <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">Success Stories</h2>
-          <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
-            Real projects, real results. Here's how I've helped businesses transform their digital presence:
-          </p>
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <h2 className="text-4xl font-bold text-center mb-16">Proven Track Record</h2>
+          <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
-              {
-                project: "E-commerce Revolution",
-                client: "Fashion Retailer",
-                result: "300% increase in sales",
-                description: "Complete redesign and optimization of online store resulted in dramatic sales growth",
-                metrics: ["95% PageSpeed Score", "60% Bounce Rate Reduction", "2.5x Session Duration"],
-                technology: "React, Node.js, PostgreSQL"
-              },
-              {
-                project: "SaaS Dashboard Transformation",
-                client: "Tech Startup",
-                result: "40% user engagement boost",
-                description: "Intuitive dashboard design that simplified complex data and improved user experience",
-                metrics: ["50% Faster Onboarding", "95% User Satisfaction", "30% Feature Adoption"],
-                technology: "Next.js, TypeScript, Supabase"
-              }
-            ].map((caseStudy, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 group">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <span className="text-sm font-medium text-primary">{caseStudy.client}</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{caseStudy.project}</h3>
-                <div className="text-3xl font-bold text-primary mb-4">{caseStudy.result}</div>
-                <p className="text-muted-foreground mb-6 leading-relaxed">{caseStudy.description}</p>
-                <div className="space-y-2 mb-4">
-                  {caseStudy.metrics.map((metric, metricIndex) => (
-                    <div key={metricIndex} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span className="text-sm font-medium">{metric}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="text-xs text-muted-foreground bg-muted/50 rounded px-3 py-2">
-                  Tech Stack: {caseStudy.technology}
-                </div>
+              { number: "50+", label: "Projects Completed", desc: "From startups to enterprises" },
+              { number: "25+", label: "Happy Clients", desc: "Across diverse industries" },
+              { number: "3+", label: "Years Experience", desc: "Of focused web development" },
+              { number: "95%", label: "Client Satisfaction", desc: "Long-term partnerships" }
+            ].map((stat, index) => (
+              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300">
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">{stat.number}</div>
+                <div className="text-muted-foreground font-medium mb-2">{stat.label}</div>
+                <div className="text-sm text-muted-foreground">{stat.desc}</div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 bg-muted/20">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16">What Clients Say</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <Card className="p-8">
+              <div className="mb-6">
+                <p className="text-lg text-muted-foreground italic leading-relaxed">
+                  "Boluwatife transformed our online presence completely. Our website now converts 3x better and loads incredibly fast. 
+                  His attention to detail and technical expertise is unmatched. The project was delivered on time and exceeded all expectations."
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-primary-foreground font-bold">S</span>
+                </div>
+                <div>
+                  <div className="font-semibold">Sarah Johnson</div>
+                  <div className="text-sm text-muted-foreground">CEO, TechStart Inc.</div>
+                </div>
+              </div>
+            </Card>
+            <Card className="p-8">
+              <div className="mb-6">
+                <p className="text-lg text-muted-foreground italic leading-relaxed">
+                  "Working with Boluwatife was a game-changer for our business. He didn't just build a website; 
+                  he created a digital experience that our customers love. Sales increased by 200% in the first quarter after launch."
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                  <span className="text-primary-foreground font-bold">M</span>
+                </div>
+                <div>
+                  <div className="font-semibold">Michael Chen</div>
+                  <div className="text-sm text-muted-foreground">Founder, EcoStore</div>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -984,94 +926,43 @@ const HomeTemplateCarousel = () => {
       {/* Process Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">How I Work</h2>
+          <h2 className="text-4xl font-bold text-center mb-8">My Development Process</h2>
           <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
-            My process is designed for maximum efficiency and collaboration. Every step is transparent, 
-            measurable, and focused on delivering results that exceed your expectations.
+            Every great project starts with understanding. My process is designed to ensure we're aligned 
+            from day one and that every milestone brings us closer to your vision.
           </p>
           <div className="grid md:grid-cols-4 gap-8">
             {[
               { 
                 step: "01", 
-                title: "Discovery", 
-                desc: "Understanding your vision, goals, and target audience through detailed consultation and market research.",
-                duration: "1 week",
-                deliverables: "Strategy document, wireframes, project timeline"
+                title: "Discovery & Strategy", 
+                desc: "We start by understanding your business goals, target audience, and technical requirements. This foundation ensures everything we build serves a purpose.",
+                icon: <Globe className="h-6 w-6" />
               },
               { 
                 step: "02", 
-                title: "Strategy", 
-                desc: "Creating a comprehensive plan that aligns technology with your business objectives and user needs.",
-                duration: "1-2 weeks",
-                deliverables: "Technical specification, design mockups, development roadmap"
+                title: "Design & Planning", 
+                desc: "Creating wireframes, mockups, and technical architecture. Every detail is planned before a single line of code is written.",
+                icon: <Code className="h-6 w-6" />
               },
               { 
                 step: "03", 
-                title: "Development", 
-                desc: "Building your solution with clean code, best practices, and regular progress updates.",
-                duration: "2-6 weeks",
-                deliverables: "Working application, documentation, testing reports"
+                title: "Development & Testing", 
+                desc: "Building your solution with clean, maintainable code. Rigorous testing ensures everything works perfectly across all devices and browsers.",
+                icon: <Zap className="h-6 w-6" />
               },
               { 
                 step: "04", 
-                title: "Launch", 
-                desc: "Deploying your project with thorough testing, optimization, and ongoing support.",
-                duration: "Ongoing",
-                deliverables: "Live website, analytics setup, maintenance plan"
+                title: "Launch & Optimization", 
+                desc: "Deploying your project with monitoring and analytics in place. Post-launch optimization ensures peak performance and continuous improvement.",
+                icon: <Star className="h-6 w-6" />
               }
-            ].map((phase, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105">
-                <div className="w-16 h-16 bg-gradient-primary text-primary-foreground rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                  {phase.step}
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{phase.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">{phase.desc}</p>
-                <div className="space-y-2">
-                  <div className="bg-muted text-muted-foreground px-3 py-1 rounded-full text-xs font-medium">
-                    Duration: {phase.duration}
-                  </div>
-                  <div className="text-xs text-muted-foreground bg-primary/10 rounded px-2 py-1">
-                    {phase.deliverables}
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 px-4 bg-muted/20">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-16">Client Success Stories</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                quote: "Boluwatife didn't just build us a website—he transformed our entire digital strategy. Our online sales increased by 400% in just three months.",
-                author: "Jessica Martinez",
-                role: "CEO, StyleHub Fashion",
-                avatar: "J"
-              },
-              {
-                quote: "The level of attention to detail and technical expertise is unmatched. Our app now performs flawlessly and our users love the new interface.",
-                author: "David Thompson",
-                role: "CTO, DataFlow Solutions",
-                avatar: "D"
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300">
-                <div className="mb-6">
-                  <p className="text-lg text-muted-foreground italic leading-relaxed">"{testimonial.quote}"</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold">{testimonial.avatar}</span>
-                  </div>
-                  <div>
-                    <div className="font-semibold">{testimonial.author}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                  </div>
-                </div>
+            ].map((step, index) => (
+              <Card key={index} className="p-6 text-center hover:shadow-lg transition-all duration-300">
+                <div className="text-3xl font-bold text-primary mb-4">{step.step}</div>
+                <div className="text-primary mb-4 flex justify-center">{step.icon}</div>
+                <h3 className="text-lg font-semibold mb-3">{step.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
               </Card>
             ))}
           </div>
@@ -1079,39 +970,25 @@ const HomeTemplateCarousel = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10">
+      <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-transparent to-primary/10">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+          <h2 className="text-4xl font-bold mb-8">Ready to Build Something Amazing?</h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Let's discuss how we can bring your boldest vision to life with innovative web solutions that drive real business results. 
-            Your success story starts with a single conversation.
+            Let's turn your vision into reality. Whether you need a complete web application, 
+            performance optimization, or strategic digital guidance, I'm here to help you succeed.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-gradient-primary hover:shadow-glow px-8 py-6 text-lg transition-all duration-300 hover:scale-105">
+              <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 hover:scale-105">
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
             <Link to="/portfolio">
-              <Button variant="outline" size="lg" className="px-8 py-6 text-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-                View Case Studies
+              <Button variant="outline" size="lg" className="hover:bg-primary hover:text-primary-foreground transition-all duration-300">
+                View My Work
               </Button>
             </Link>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">Free Strategy Call</div>
-              <div className="text-sm text-muted-foreground">45-minute consultation to discuss your project</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">Fast Delivery</div>
-              <div className="text-sm text-muted-foreground">Most projects launch within 2-6 weeks</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-primary mb-2">Full Support</div>
-              <div className="text-sm text-muted-foreground">Ongoing maintenance and optimization included</div>
-            </div>
           </div>
         </div>
       </section>
