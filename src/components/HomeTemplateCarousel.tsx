@@ -1035,12 +1035,17 @@ const HomeTemplateCarousel = () => {
             <button
               key={index}
               onClick={() => goToTemplate(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`relative w-4 h-4 rounded-full transition-all duration-300 ${
                 currentTemplate === index
-                  ? "bg-primary scale-125"
-                  : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  ? "bg-gradient-primary scale-125 shadow-glow"
+                  : "bg-muted-foreground/30 hover:bg-muted-foreground/50 hover:scale-110"
               }`}
-            />
+            >
+              {currentTemplate === index && (
+                <div className="absolute inset-0 rounded-full bg-gradient-primary animate-pulse opacity-50" />
+              )}
+              <span className="sr-only">Template {index + 1}</span>
+            </button>
           ))}
         </div>
       </div>
