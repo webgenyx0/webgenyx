@@ -430,7 +430,19 @@ const HomeTemplateCarousel = () => {
         <video 
           ref={(video) => {
             if (video) {
+              video.defaultPlaybackRate = 0.5;
               video.playbackRate = 0.5;
+            }
+          }}
+          onLoadedMetadata={(e) => {
+            const v = e.currentTarget;
+            v.defaultPlaybackRate = 0.5;
+            v.playbackRate = 0.5;
+          }}
+          onPlay={(e) => {
+            const v = e.currentTarget;
+            if (v.playbackRate !== 0.5) {
+              v.playbackRate = 0.5;
             }
           }}
           src="/lovable-uploads/template2-custom-banner.mp4" 
@@ -438,7 +450,7 @@ const HomeTemplateCarousel = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover animate-slow-motion"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-purple-900/60"></div>
       </div>
@@ -632,17 +644,12 @@ const HomeTemplateCarousel = () => {
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
           <video 
-            ref={(video) => {
-              if (video) {
-                video.playbackRate = 0.5;
-              }
-            }}
             src="/lovable-uploads/template2-banner.mp4" 
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover animate-slow-motion"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/80 to-background/60"></div>
         </div>
