@@ -426,30 +426,10 @@ const HomeTemplateCarousel = () => {
   const Template2 = () => (
     <div className="min-h-screen bg-slate-900 relative overflow-hidden">
       {/* Background Tech Pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <video 
-          ref={(video) => {
-            if (video) {
-              video.defaultPlaybackRate = 0.5;
-              video.playbackRate = 0.5;
-            }
-          }}
-          onLoadedMetadata={(e) => {
-            const v = e.currentTarget;
-            v.defaultPlaybackRate = 0.5;
-            v.playbackRate = 0.5;
-          }}
-          onPlay={(e) => {
-            const v = e.currentTarget;
-            if (v.playbackRate !== 0.5) {
-              v.playbackRate = 0.5;
-            }
-          }}
-          src="/lovable-uploads/template2-custom-banner.mp4" 
-          autoPlay
-          loop
-          muted
-          playsInline
+      <div className="absolute inset-0 opacity-30">
+        <img 
+          src="/lovable-uploads/template2-modern-office.jpeg" 
+          alt="Modern office background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-purple-900/60"></div>
@@ -643,12 +623,9 @@ const HomeTemplateCarousel = () => {
       <section className="relative overflow-hidden pt-24 pb-16 px-4">
         {/* Background Video */}
         <div className="absolute inset-0 z-0">
-          <video 
-            src="/lovable-uploads/template2-banner.mp4" 
-            autoPlay
-            loop
-            muted
-            playsInline
+          <img 
+            src="/lovable-uploads/template3-keyboard.png" 
+            alt="Website keyboard background"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/80 to-background/60"></div>
