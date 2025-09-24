@@ -433,7 +433,8 @@ const HomeTemplateCarousel = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-[slow-motion_20s_linear_infinite]"
+          style={{ animationPlayState: 'running' }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-purple-900/60"></div>
       </div>
@@ -632,7 +633,8 @@ const HomeTemplateCarousel = () => {
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover animate-[slow-motion_20s_linear_infinite]"
+            style={{ animationPlayState: 'running' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/85 via-slate-900/80 to-background/60"></div>
         </div>

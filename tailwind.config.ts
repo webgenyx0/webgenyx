@@ -133,6 +133,11 @@ export default {
 					'0%': { 'background-position': '0% 50%' },
 					'50%': { 'background-position': '100% 50%' },
 					'100%': { 'background-position': '0% 50%' }
+				},
+				'slow-motion': {
+					'0%': { transform: 'scale(1.05)' },
+					'50%': { transform: 'scale(1)' },
+					'100%': { transform: 'scale(1.05)' }
 				}
 			},
 			animation: {
@@ -148,6 +153,7 @@ export default {
 				'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
 				'floating': 'floating 3s ease-in-out infinite',
 				'text-shimmer': 'text-shimmer 2s ease-in-out infinite',
+				'slow-motion': 'slow-motion 20s ease-in-out infinite',
 			},
 			transitionTimingFunction: {
 				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
