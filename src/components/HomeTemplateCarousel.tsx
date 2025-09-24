@@ -430,7 +430,7 @@ const HomeTemplateCarousel = () => {
         <img 
           src="/lovable-uploads/template2-modern-office.jpeg" 
           alt="Modern office background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-slow-motion"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-purple-900/60"></div>
       </div>
