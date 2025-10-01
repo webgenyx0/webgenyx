@@ -436,7 +436,7 @@ const HomeTemplateCarousel = () => {
         >
           <source src="/lovable-uploads/template2-banner.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-purple-900/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/50 via-slate-900/40 to-purple-900/30"></div>
       </div>
       
       <section className="relative z-10 pt-32 pb-20 px-4">
