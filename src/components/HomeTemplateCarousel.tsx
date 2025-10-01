@@ -427,11 +427,15 @@ const HomeTemplateCarousel = () => {
     <div className="min-h-screen bg-slate-900 relative overflow-hidden">
       {/* Background Tech Pattern */}
       <div className="absolute inset-0 opacity-30">
-        <img 
-          src="/lovable-uploads/template2-modern-office.jpeg" 
-          alt="Modern office background"
-          className="w-full h-full object-cover animate-slow-motion"
-        />
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/lovable-uploads/template2-banner.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-900/80 to-purple-900/60"></div>
       </div>
       
