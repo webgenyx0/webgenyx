@@ -4,37 +4,37 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-// Import digital marketing themed images
-import dmEcosystem from "@/assets/dm-ecosystem.jpg";
-import dmAiAutomation from "@/assets/dm-ai-automation.jpg";
-import dmSocialUniverse from "@/assets/dm-social-universe.jpg";
-import dmLab from "@/assets/dm-lab.jpg";
-import dmContentGarden from "@/assets/dm-content-garden.jpg";
-import dmEmailOrchestra from "@/assets/dm-email-orchestra.jpg";
-import dmInfluencerCity from "@/assets/dm-influencer-city.jpg";
-import dmDataCrystal from "@/assets/dm-data-crystal.jpg";
-import dmBrandTheater from "@/assets/dm-brand-theater.jpg";
-import dmAutomationFactory from "@/assets/dm-automation-factory.jpg";
-import dmTimeMachine from "@/assets/dm-time-machine.jpg";
-import dmCustomerMaze from "@/assets/dm-customer-maze.jpg";
-import dmPsychologyLab from "@/assets/dm-psychology-lab.jpg";
-import dmGrowthRocket from "@/assets/dm-growth-rocket.jpg";
-import dmPersonalizationWorkshop from "@/assets/dm-personalization-workshop.jpg";
-import dmAttributionDetective from "@/assets/dm-attribution-detective.jpg";
-import dmViralVolcano from "@/assets/dm-viral-volcano.jpg";
-import dmMartechTower from "@/assets/dm-martech-tower.jpg";
-import dmOmnichannelWeb from "@/assets/dm-omnichannel-web.jpg";
-import dmRoiTreasure from "@/assets/dm-roi-treasure.jpg";
-import dmSentimentWeather from "@/assets/dm-sentiment-weather.jpg";
-import dmCroLaboratory from "@/assets/dm-cro-laboratory.jpg";
-import dmAttributionCosmos from "@/assets/dm-attribution-cosmos.jpg";
-import dmChessStrategy from "@/assets/dm-chess-strategy.jpg";
-import dmAutomationSymphony from "@/assets/dm-automation-symphony.jpg";
-import dmClvHourglass from "@/assets/dm-clv-hourglass.jpg";
-import dmMixologyBar from "@/assets/dm-mixology-bar.jpg";
-import dmDnaEvolution from "@/assets/dm-dna-evolution.jpg";
-import dmPredictionOracle from "@/assets/dm-prediction-oracle.jpg";
-import dmEngagementArcade from "@/assets/dm-engagement-arcade.jpg";
+// Import realistic work images
+import workCodingLaptop from "@/assets/work-coding-laptop.jpg";
+import workTeamMeeting from "@/assets/work-team-meeting.jpg";
+import workOfficeDesk from "@/assets/work-office-desk.jpg";
+import workDeskSetup from "@/assets/work-desk-setup.jpg";
+import workMacbookCode from "@/assets/work-macbook-code.jpg";
+import workBusinessMeeting from "@/assets/work-business-meeting.jpg";
+import workWomanComputer from "@/assets/work-woman-computer.jpg";
+import workTeamCollaboration from "@/assets/work-team-collaboration.jpg";
+import workOpenOffice from "@/assets/work-open-office.jpg";
+import workLaptopHands from "@/assets/work-laptop-hands.jpg";
+import workModernOffice from "@/assets/work-modern-office.jpg";
+import workStartupOffice from "@/assets/work-startup-office.jpg";
+import workProgramming from "@/assets/work-programming.jpg";
+import workBusinessDesk from "@/assets/work-business-desk.jpg";
+import workTeamHuddle from "@/assets/work-team-huddle.jpg";
+import workVideoCall from "@/assets/work-video-call.jpg";
+import workCoworking from "@/assets/work-coworking.jpg";
+import workConferenceRoom from "@/assets/work-conference-room.jpg";
+import workOfficeSpace from "@/assets/work-office-space.jpg";
+import workMonitorSetup from "@/assets/work-monitor-setup.jpg";
+import workTypingLaptop from "@/assets/work-typing-laptop.jpg";
+import workBrainstorming from "@/assets/work-brainstorming.jpg";
+import workTeamWork from "@/assets/work-team-work.jpg";
+import workLaptopCoffee from "@/assets/work-laptop-coffee.jpg";
+import workPresentation from "@/assets/work-presentation.jpg";
+import workDesignDesk from "@/assets/work-design-desk.jpg";
+import workStandingMeeting from "@/assets/work-standing-meeting.jpg";
+import workWhiteboard from "@/assets/work-whiteboard.jpg";
+import workOfficeDiscussion from "@/assets/work-office-discussion.jpg";
+import workGlassOffice from "@/assets/work-glass-office.jpg";
 
 const Portfolio = () => {
   const [loaded, setLoaded] = useState(false);
@@ -49,7 +49,7 @@ const Portfolio = () => {
       id: 1,
       title: "E-Commerce Platform",
       description: "A modern e-commerce solution with advanced filtering, payment integration, and admin dashboard.",
-      image: dmEcosystem,
+      image: workCodingLaptop,
       category: "Web Development",
       technologies: ["React", "Next.js", "Stripe", "PostgreSQL"],
       liveUrl: "#",
@@ -60,7 +60,7 @@ const Portfolio = () => {
       id: 2,
       title: "SaaS Dashboard",
       description: "A comprehensive dashboard for SaaS analytics with real-time data visualization and reporting.",
-      image: dmAiAutomation,
+      image: workTeamMeeting,
       category: "Web Development",
       technologies: ["React", "TypeScript", "D3.js", "Node.js"],
       liveUrl: "#",
@@ -71,7 +71,7 @@ const Portfolio = () => {
       id: 3,
       title: "Restaurant Website",
       description: "A beautiful restaurant website with online ordering system and table reservation functionality.",
-      image: dmSocialUniverse,
+      image: workOfficeDesk,
       category: "Web Design",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       liveUrl: "#",
@@ -82,7 +82,7 @@ const Portfolio = () => {
       id: 4,
       title: "Portfolio Website",
       description: "A creative portfolio website for a digital artist with interactive galleries and animations.",
-      image: dmLab,
+      image: workDeskSetup,
       category: "Web Design",
       technologies: ["Next.js", "GSAP", "CSS3"],
       liveUrl: "#",
@@ -93,7 +93,7 @@ const Portfolio = () => {
       id: 5,
       title: "Task Management App",
       description: "A collaborative task management application with real-time updates and team features.",
-      image: dmContentGarden,
+      image: workMacbookCode,
       category: "Web Development",
       technologies: ["React", "Firebase", "Material-UI"],
       liveUrl: "#",
@@ -104,7 +104,7 @@ const Portfolio = () => {
       id: 6,
       title: "Corporate Website",
       description: "A professional corporate website with content management system and SEO optimization.",
-      image: dmEmailOrchestra,
+      image: workBusinessMeeting,
       category: "Web Design",
       technologies: ["Next.js", "Sanity CMS", "Tailwind CSS"],
       liveUrl: "#",
@@ -115,7 +115,7 @@ const Portfolio = () => {
       id: 7,
       title: "AI Code Assistant",
       description: "An intelligent code assistant that helps developers write better code with AI-powered suggestions.",
-      image: dmInfluencerCity,
+      image: workWomanComputer,
       category: "Web Development",
       technologies: ["React", "OpenAI API", "Monaco Editor", "Python"],
       liveUrl: "#",
@@ -126,7 +126,7 @@ const Portfolio = () => {
       id: 8,
       title: "Mobile Banking App",
       description: "A secure mobile banking application with biometric authentication and real-time transactions.",
-      image: dmDataCrystal,
+      image: workTeamCollaboration,
       category: "Mobile App",
       technologies: ["React Native", "Node.js", "MongoDB", "Stripe"],
       liveUrl: "#",
@@ -137,7 +137,7 @@ const Portfolio = () => {
       id: 9,
       title: "IoT Dashboard",
       description: "A comprehensive dashboard for managing IoT devices with real-time monitoring and controls.",
-      image: dmBrandTheater,
+      image: workOpenOffice,
       category: "Web Development",
       technologies: ["Vue.js", "Socket.io", "MQTT", "InfluxDB"],
       liveUrl: "#",
@@ -148,7 +148,7 @@ const Portfolio = () => {
       id: 10,
       title: "Fitness Tracking App",
       description: "A comprehensive fitness app with workout tracking, nutrition monitoring, and social features.",
-      image: dmAutomationFactory,
+      image: workLaptopHands,
       category: "Mobile App",
       technologies: ["Flutter", "Firebase", "Health APIs", "ML Kit"],
       liveUrl: "#",
@@ -159,7 +159,7 @@ const Portfolio = () => {
       id: 11,
       title: "Creative Agency Website",
       description: "A stunning website for a creative agency featuring portfolio showcases and smooth animations.",
-      image: dmTimeMachine,
+      image: workModernOffice,
       category: "Web Design",
       technologies: ["Gatsby", "Three.js", "GSAP", "Contentful"],
       liveUrl: "#",
@@ -170,7 +170,7 @@ const Portfolio = () => {
       id: 12,
       title: "Blockchain Explorer",
       description: "A modern blockchain explorer with advanced analytics and transaction visualization.",
-      image: dmCustomerMaze,
+      image: workStartupOffice,
       category: "Web Development",
       technologies: ["React", "Web3.js", "GraphQL", "Redis"],
       liveUrl: "#",
@@ -181,7 +181,7 @@ const Portfolio = () => {
       id: 13,
       title: "Learning Management System",
       description: "A comprehensive LMS with course creation, student progress tracking, and interactive content.",
-      image: dmPsychologyLab,
+      image: workProgramming,
       category: "Web Development",
       technologies: ["Next.js", "Prisma", "PostgreSQL", "AWS S3"],
       liveUrl: "#",
@@ -192,7 +192,7 @@ const Portfolio = () => {
       id: 14,
       title: "Social Media Dashboard",
       description: "A unified dashboard for managing multiple social media accounts with analytics and scheduling.",
-      image: dmGrowthRocket,
+      image: workBusinessDesk,
       category: "Web Development",
       technologies: ["React", "Express.js", "Redis", "Social APIs"],
       liveUrl: "#",
@@ -203,7 +203,7 @@ const Portfolio = () => {
       id: 15,
       title: "Event Management App",
       description: "A mobile app for event planning with guest management, scheduling, and real-time updates.",
-      image: dmPersonalizationWorkshop,
+      image: workTeamHuddle,
       category: "Mobile App",
       technologies: ["React Native", "Firebase", "Push Notifications", "Maps API"],
       liveUrl: "#",
@@ -214,7 +214,7 @@ const Portfolio = () => {
       id: 16,
       title: "UI Design System",
       description: "A comprehensive design system with reusable components and design tokens for consistent branding.",
-      image: dmAttributionDetective,
+      image: workVideoCall,
       category: "UI/UX Design",
       technologies: ["Figma", "Storybook", "Design Tokens", "Accessibility"],
       liveUrl: "#",
@@ -225,7 +225,7 @@ const Portfolio = () => {
       id: 17,
       title: "Real Estate Platform",
       description: "A modern real estate platform with property listings, virtual tours, and mortgage calculators.",
-      image: dmViralVolcano,
+      image: workCoworking,
       category: "Web Development",
       technologies: ["React", "MapBox", "Strapi", "Payment APIs"],
       liveUrl: "#",
@@ -236,7 +236,7 @@ const Portfolio = () => {
       id: 18,
       title: "Smart Home Controller",
       description: "A mobile app for controlling smart home devices with voice commands and automation features.",
-      image: dmMartechTower,
+      image: workConferenceRoom,
       category: "Mobile App",
       technologies: ["React Native", "IoT APIs", "Voice Recognition", "BLE"],
       liveUrl: "#",
@@ -247,7 +247,7 @@ const Portfolio = () => {
       id: 19,
       title: "Medical Records System",
       description: "A secure medical records management system with patient portals and appointment scheduling.",
-      image: dmOmnichannelWeb,
+      image: workOfficeSpace,
       category: "Web Development",
       technologies: ["React", "FHIR", "HIPAA Compliance", "PostgreSQL"],
       liveUrl: "#",
@@ -258,7 +258,7 @@ const Portfolio = () => {
       id: 20,
       title: "Travel Planning App",
       description: "A comprehensive travel app with itinerary planning, booking integration, and offline maps.",
-      image: dmRoiTreasure,
+      image: workMonitorSetup,
       category: "Mobile App",
       technologies: ["Flutter", "Google Maps", "Booking APIs", "Offline Storage"],
       liveUrl: "#",
@@ -269,7 +269,7 @@ const Portfolio = () => {
       id: 21,
       title: "Digital Marketing Campaign",
       description: "A comprehensive digital marketing campaign with sentiment analysis and mood tracking features.",
-      image: dmSentimentWeather,
+      image: workTypingLaptop,
       category: "UI/UX Design",
       technologies: ["Sentiment Analysis", "Mood Tracking", "Data Viz", "Marketing"],
       liveUrl: "#",
@@ -280,7 +280,7 @@ const Portfolio = () => {
       id: 22,
       title: "Conversion Rate Optimization Tool",
       description: "Advanced CRO laboratory with A/B testing capabilities and user behavior analysis.",
-      image: dmCroLaboratory,
+      image: workBrainstorming,
       category: "UI/UX Design",
       technologies: ["A/B Testing", "User Analysis", "CRO", "Optimization"],
       liveUrl: "#",
@@ -291,7 +291,7 @@ const Portfolio = () => {
       id: 23,
       title: "Attribution Modeling Platform",
       description: "Cosmic attribution modeling system with advanced customer journey tracking.",
-      image: dmAttributionCosmos,
+      image: workTeamWork,
       category: "UI/UX Design",
       technologies: ["Attribution", "Customer Journey", "Analytics", "Tracking"],
       liveUrl: "#",
@@ -302,7 +302,7 @@ const Portfolio = () => {
       id: 24,
       title: "Marketing Strategy Dashboard",
       description: "Strategic marketing warfare platform with competitive analysis and tactical planning.",
-      image: dmChessStrategy,
+      image: workLaptopCoffee,
       category: "UI/UX Design",
       technologies: ["Strategy", "Competitive Analysis", "Planning", "Tactics"],
       liveUrl: "#",
@@ -313,7 +313,7 @@ const Portfolio = () => {
       id: 25,
       title: "Marketing Automation Symphony",
       description: "Orchestrated marketing automation with synchronized multi-channel campaigns.",
-      image: dmAutomationSymphony,
+      image: workPresentation,
       category: "UI/UX Design",
       technologies: ["Automation", "Multi-channel", "Orchestration", "Campaigns"],
       liveUrl: "#",
@@ -324,7 +324,7 @@ const Portfolio = () => {
       id: 26,
       title: "Customer Lifetime Value Calculator",
       description: "Temporal CLV visualization with loyalty tracking and retention analysis.",
-      image: dmClvHourglass,
+      image: workDesignDesk,
       category: "UI/UX Design",
       technologies: ["CLV", "Loyalty", "Retention", "Analytics"],
       liveUrl: "#",
@@ -335,7 +335,7 @@ const Portfolio = () => {
       id: 27,
       title: "Marketing Mix Optimization",
       description: "Marketing mixology platform for optimizing promotional ingredient combinations.",
-      image: dmMixologyBar,
+      image: workStandingMeeting,
       category: "UI/UX Design",
       technologies: ["Marketing Mix", "Optimization", "Campaigns", "Testing"],
       liveUrl: "#",
@@ -346,7 +346,7 @@ const Portfolio = () => {
       id: 28,
       title: "Market Evolution Tracker",
       description: "DNA-based marketing evolution system with genetic customer segmentation.",
-      image: dmDnaEvolution,
+      image: workWhiteboard,
       category: "UI/UX Design",
       technologies: ["Evolution", "Segmentation", "DNA Analysis", "Market Research"],
       liveUrl: "#",
@@ -357,7 +357,7 @@ const Portfolio = () => {
       id: 29,
       title: "Marketing Prediction Oracle",
       description: "Mystical marketing forecasting system with trend prediction and outcome analysis.",
-      image: dmPredictionOracle,
+      image: workOfficeDiscussion,
       category: "UI/UX Design",
       technologies: ["Prediction", "Forecasting", "Trends", "Oracle"],
       liveUrl: "#",
@@ -368,7 +368,7 @@ const Portfolio = () => {
       id: 30,
       title: "Customer Engagement Arcade",
       description: "Gamified customer engagement platform with loyalty points and achievement systems.",
-      image: dmEngagementArcade,
+      image: workGlassOffice,
       category: "UI/UX Design",
       technologies: ["Gamification", "Engagement", "Loyalty", "Achievements"],
       liveUrl: "#",
