@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 
 const HomeTemplateCarousel = () => {
-  const [currentTemplate, setCurrentTemplate] = useState(0);
+  const [currentTemplate, setCurrentTemplate] = useState(1);
 
   // Auto-slide effect
   useEffect(() => {
